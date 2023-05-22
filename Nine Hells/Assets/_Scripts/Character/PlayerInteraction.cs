@@ -5,10 +5,20 @@ using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    // private void OnCollisionEnter(Collision collision)
+    // {
+    //     
+    //     if (collision.gameObject.TryGetComponent<IInteractable>(out var interactable))
+    //     {
+    //         interactable.Interact();
+    //     }
+    // }
+    
+    
+    private void OnTriggerEnter(Collider Collider)
     {
         
-        if (collision.gameObject.TryGetComponent<IInteractable>(out var interactable))
+        if (Collider.gameObject.TryGetComponent<IInteractable>(out var interactable))
         {
             interactable.Interact();
         }

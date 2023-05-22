@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb0191a8a7d2a4d4a99fb7dfe089ceb1, type: 3}
   m_Name: TalkInteraction
   m_EditorClassIdentifier: 
-  interactionType: 0
+  interactionType: 1
   dialogues: []

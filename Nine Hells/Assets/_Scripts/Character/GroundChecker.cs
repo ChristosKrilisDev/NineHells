@@ -7,7 +7,7 @@ namespace _Scripts.Character
 
         private void Start()
         {
-            Player = transform.root.GetComponent<PlayerController>();
+            // Player = transform.root.GetComponent<PlayerController>();
         }
 
         private void OnTriggerEnter(Collider other)
