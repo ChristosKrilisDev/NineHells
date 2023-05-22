@@ -4,6 +4,6 @@ namespace _Scripts.Interactions
     {
 
         
-        public abstract void Interact();
+        public abstract void DisplayUI();
     }
 }

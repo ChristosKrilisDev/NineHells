@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 namespace _Scripts.Interactions.InteractionsSO
 {
@@ -10,6 +11,16 @@ namespace _Scripts.Interactions.InteractionsSO
         public virtual void Interact()
         {
 
+        }
+
+        public virtual void ResetData()
+        {
+            CanInteract = true;
+        }
+
+        public virtual void Run()
+        {
+            
         }
     }
 }

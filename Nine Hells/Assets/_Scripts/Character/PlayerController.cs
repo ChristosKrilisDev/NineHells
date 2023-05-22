@@ -35,7 +35,8 @@ namespace _Scripts.Character
 
             if (!_isClimbing) return;
             var moveY = Input.GetAxisRaw("Vertical");
-            _rb.velocity = new Vector2(_rb.velocity.x/3, moveY * _climbSpeed);
+            var speed = IsGrounded ? 1 : 3;
+            _rb.velocity = new Vector2(_rb.velocity.x/speed, moveY * _climbSpeed);
 
         }
 

@@ -15,7 +15,7 @@ public class InteractionObject : MonoBehaviour, IInteractable
         InteractionCanvas.gameObject.SetActive(false);
     }
 
-    public void Interact()
+    public void DisplayUI()
     {
         if(!_interaction.CanInteract) return;
         
@@ -23,6 +23,13 @@ public class InteractionObject : MonoBehaviour, IInteractable
         InteractionCanvas.DisplayInteractionText(_interaction.interactionType.ToString().ToUpper());
         // Debug.Log($"IInteraction: {_interaction.interactionType.ToString()}");
 
+    }
+
+    public void Interact()
+    {
+        if(!_interaction.CanInteract) return;
+        InteractionCanvas.gameObject.SetActive(false);
+        _interaction.Run();
     }
 
     public void Reset()
