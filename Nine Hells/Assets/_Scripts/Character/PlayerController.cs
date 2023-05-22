@@ -10,6 +10,7 @@ namespace _Scripts.Character
         private bool _isClimbing = false;
 
         [Space]
+        [SerializeField] private float _maxVelocity = 5;
         [SerializeField]private float _moveSpeed = 5f;
         [SerializeField]private float _climbSpeed = 0.5f;
         [SerializeField]private float _jumpForce = 5f;
@@ -21,23 +22,24 @@ namespace _Scripts.Character
             _rb = GetComponent<Rigidbody>();
         }
 
-        private void Update()
-        {
-            ClimbInput();
-            Jump();
-        }
-    
         private void FixedUpdate()
         {
             var moveX = Input.GetAxisRaw("Horizontal");
             _rb.velocity = new Vector2(moveX * _moveSpeed, _rb.velocity.y);
-
-
+            
             if (!_isClimbing) return;
+
             var moveY = Input.GetAxisRaw("Vertical");
             var speed = IsGrounded ? 1 : 3;
-            _rb.velocity = new Vector2(_rb.velocity.x/speed, moveY * _climbSpeed);
 
+            var desiredVelocity = new Vector2(_rb.velocity.x / speed, moveY * _climbSpeed);
+            _rb.velocity = Vector2.ClampMagnitude(desiredVelocity, _maxVelocity);
+        }
+        
+        private void Update()
+        {
+            ClimbInput();
+            Jump();
         }
 
         private void ClimbInput()
@@ -55,7 +57,7 @@ namespace _Scripts.Character
             {
                 // var force = Mathf.Min(_rb.velocity.y, _jumpForce);
                 //todo: fix max velocity
-                _rb.AddForce(new Vector3(0f, _jumpForce,0), ForceMode.Impulse);
+                _rb.AddForce(new Vector3(0f, _jumpForce,0), ForceMode.VelocityChange);
             }
         }
     
