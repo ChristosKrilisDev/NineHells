@@ -1,4 +1,5 @@
 using Cinemachine;
+using DG.Tweening;
 using TMPro;
 using UnityEditor.UIElements;
 using UnityEngine;
@@ -17,14 +18,9 @@ namespace _Scripts.Interactions.InteractionsSO
         {
             base.ResetData();
             CanInteract = false;
-            transform.localPosition = _placementTransform.transform.localPosition;
-            transform.localRotation = _placementTransform.transform.localRotation;
-
             gameObject.tag = _tagKey.ToString();
-
-            // if (_tagKey.ToString().ToLower() == "ladder")
-            // {
-            // }
+            transform.DOLocalMove(_placementTransform.localPosition, 0.4f);
+            transform.DOLocalRotate(_placementTransform.transform.eulerAngles, 0.4f);
         }
 
         public override void ResetData()
