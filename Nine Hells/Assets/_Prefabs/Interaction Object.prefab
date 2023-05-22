@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 518945178882372605}
   - component: {fileID: 518945178882372604}
   - component: {fileID: 518945178882372595}
+  - component: {fileID: 46127696}
   m_Layer: 0
   m_Name: Interaction Object
   m_TagString: Untagged
@@ -111,8 +112,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54ca0b3ead102c84aa04dd3ec95b631b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interaction: {fileID: 11400000, guid: 6437d750743c6f8409b75e04ed0c05c2, type: 2}
+  _interaction: {fileID: 46127696}
   InteractionCanvas: {fileID: 6691729409251271836}
+--- !u!114 &46127696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518945178882372594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c870ac8d3aaa45a595c7d1763e3bb715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanInteract: 1
+  InteractionType: 2
 --- !u!1001 &8171715338875605542
 PrefabInstance:
   m_ObjectHideFlags: 0
