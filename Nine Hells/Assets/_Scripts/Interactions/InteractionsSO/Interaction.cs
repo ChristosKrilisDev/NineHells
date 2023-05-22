@@ -1,12 +1,10 @@
-using System;
 using UnityEngine;
 namespace _Scripts.Interactions.InteractionsSO
 {
-    public class Interaction: ScriptableObject
+    public class Interaction: MonoBehaviour
     {
         public bool CanInteract = true;
-    
-        public InteractionType interactionType;
+        public InteractionType InteractionType;
 
         public virtual void Interact()
         {

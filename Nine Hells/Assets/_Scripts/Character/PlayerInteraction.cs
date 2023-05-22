@@ -6,33 +6,33 @@ namespace _Scripts.Character
     public class PlayerInteraction : MonoBehaviour
     {
 
-        private IInteractable _focusedObj;
+        private InteractionObject _focusedObj;
 
         void Update()
         {
             InputInteract(_focusedObj);
         }
 
-        private void InputInteract(IInteractable interactable)
+        private void InputInteract(InteractionObject interactable)
         {
             if(interactable == null) return;
             
             if (Input.GetKeyDown(KeyCode.E))
             {
-                ((InteractionObject)interactable).Interact();
+                interactable.Interact();
             }
         }
 
         private void OnEnter(Collision other)
         {
-            if (!other.gameObject.TryGetComponent<IInteractable>(out var interactable)) return;
+            if (!other.gameObject.TryGetComponent<InteractionObject>(out var interactable)) return;
             interactable.DisplayUI();
             _focusedObj = interactable;
         }
         
         private void OnEnter(Collider other)
         {
-            if (!other.gameObject.TryGetComponent<IInteractable>(out var interactable)) return;
+            if (!other.gameObject.TryGetComponent<InteractionObject>(out var interactable)) return;
             interactable.DisplayUI();
             _focusedObj = interactable;
         }
@@ -41,7 +41,6 @@ namespace _Scripts.Character
         
         private void OnCollisionEnter(Collision other)
         {
-
             OnEnter(other);
         }
 
@@ -53,14 +52,14 @@ namespace _Scripts.Character
 
         private void OnCollisionExit(Collision other)
         {
-            if (!other.gameObject.TryGetComponent<IInteractable>(out var interactable)) return;
-            ((InteractionObject)interactable).Reset();
+            if (!other.gameObject.TryGetComponent<InteractionObject>(out var interactable)) return;
+            interactable.Reset();
         }
 
         private void OnTriggerExit(Collider other)
         {
-            if (!other.gameObject.TryGetComponent<IInteractable>(out var interactable)) return;
-            ((InteractionObject)interactable).Reset();
+            if (!other.gameObject.TryGetComponent<InteractionObject>(out var interactable)) return;
+            interactable.Reset();
         }
     }
 }

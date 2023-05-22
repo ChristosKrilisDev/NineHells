@@ -3,7 +3,6 @@ using UnityEngine;
 
 namespace _Scripts.Interactions.InteractionsSO
 {
-    [CreateAssetMenu(fileName = "TalkInteraction", menuName = "Interactions/Talk", order = 1)]
     public class TalkInteraction : Interaction
     {
     
@@ -12,7 +11,7 @@ namespace _Scripts.Interactions.InteractionsSO
 
         public void OnAwake()
         {
-            interactionType = InteractionType.Talk;
+            InteractionType = InteractionType.Talk;
         }
 
         public override void Interact()
