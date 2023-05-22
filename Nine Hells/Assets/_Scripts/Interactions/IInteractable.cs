@@ -1,7 +1,9 @@
-namespace _Scripts
+namespace _Scripts.Interactions
 {
     public interface IInteractable
     {
-        public abstract void Interact();
+
+        
+        public abstract void DisplayUI();
     }
 }

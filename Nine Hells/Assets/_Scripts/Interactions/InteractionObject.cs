@@ -1,15 +1,40 @@
-using _Scripts;
-using System.Collections;
-using System.Collections.Generic;
+using _Scripts.Interactions.InteractionsSO;
 using UnityEngine;
-
-public class InteractionObject : MonoBehaviour, IInteractable
+namespace _Scripts.Interactions
 {
-    [SerializeField] private Interaction interaction;
-
-    public void Interact()
+    public class InteractionObject : MonoBehaviour
     {
-        Debug.Log($"IInteraction: {interaction.interactionType.ToString()}");
+        [SerializeField] private Interaction _interaction;
 
+    
+        public InteractionCanvas InteractionCanvas;
+
+        public void Start()
+        {
+            InteractionCanvas.gameObject.SetActive(false);
+        }
+
+        public void DisplayUI()
+        {
+            if(!_interaction.CanInteract) return;
+        
+            InteractionCanvas.gameObject.SetActive(true);
+            InteractionCanvas.DisplayInteractionText(_interaction.InteractionType.ToString().ToUpper());
+            // Debug.Log($"IInteraction: {_interaction.interactionType.ToString()}");
+
+        }
+
+        public void Interact()
+        {
+            if(!_interaction.CanInteract) return;
+            InteractionCanvas.gameObject.SetActive(false);
+            _interaction.Run();
+        }
+
+        public void Reset()
+        {
+            InteractionCanvas.gameObject.SetActive(false);
+        }
+    
     }
 }
