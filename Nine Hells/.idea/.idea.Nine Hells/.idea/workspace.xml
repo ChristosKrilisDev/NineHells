@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b9278631-f436-40de-b250-ac2bd0a5f5cd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Nine Hells/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Nine Hells/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Hell 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Hell 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Character/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Character/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Character/PlayerInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Character/PlayerInteraction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Interactions/IInteractable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Interactions/IInteractable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionsSO/Interaction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionsSO/Interaction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionsSO/UseInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionsSO/UseInteraction.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +70,7 @@
       <workItem from="1684681551577" duration="2821000" />
       <workItem from="1684739285318" duration="1473000" />
       <workItem from="1684745704937" duration="917000" />
+      <workItem from="1684766305039" duration="1671000" />
     </task>
     <servers />
   </component>
