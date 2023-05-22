@@ -1,53 +1,80 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
-[RequireComponent(typeof(PlayerInteraction))]
-public class PlayerController : MonoBehaviour
+namespace _Scripts.Character
 {
-
-    [SerializeField]private float _moveSpeed = 5f;
-    [SerializeField]private float _jumpForce = 5f;
-    private bool _isJumping;
-    private Rigidbody  _rb;
-
-    private const string GROUND_TAG = "Ground"; 
-
-    private void Start()
+    [RequireComponent(typeof(Rigidbody))]
+    [RequireComponent(typeof(PlayerInteraction))]
+    public class PlayerController : MonoBehaviour
     {
-        _rb = GetComponent<Rigidbody>();
-        _isJumping = false;
-    }
+        public bool IsGrounded = false;
+        private bool _isClimbing = false;
 
-    private void Update()
-    {
-        Move();
-        Jump();
-    }
+        [Space]
+        [SerializeField]private float _moveSpeed = 5f;
+        [SerializeField]private float _climbSpeed = 0.5f;
+        [SerializeField]private float _jumpForce = 5f;
 
-    private void Move()
-    {
-        var moveX = Input.GetAxis("Horizontal");
-        var movement = new Vector3(moveX * _moveSpeed, _rb.velocity.y, 0f);
-        _rb.velocity = movement;
-    }
+        private Rigidbody _rb;
 
-    private void Jump()
-    {
-        if (!Input.GetButtonDown("Jump") || _isJumping) return;
-        
-        _rb.AddForce(new Vector3(0f, _jumpForce, 0f), ForceMode.Impulse);
-        _isJumping = true;
-    } 
-    
-    
-    private void OnCollisionEnter(Collision collision)
-    {
-        
-        if (collision.gameObject.CompareTag(GROUND_TAG))
+        private void Start()
         {
-            _isJumping = false;
+            _rb = GetComponent<Rigidbody>();
         }
+
+        private void Update()
+        {
+            ClimbInput();
+            Jump();
+        }
+    
+        private void FixedUpdate()
+        {
+            var moveX = Input.GetAxisRaw("Horizontal");
+            _rb.velocity = new Vector2(moveX * _moveSpeed, _rb.velocity.y);
+
+
+            if (!_isClimbing) return;
+            var moveY = Input.GetAxisRaw("Vertical");
+            _rb.velocity = new Vector2(_rb.velocity.x/3, moveY * _climbSpeed);
+
+        }
+
+        private void ClimbInput()
+        {
+            if (!Input.GetKeyDown(KeyCode.UpArrow) || !_isClimbing) return;
+        
+            _isClimbing = false;
+            _rb.useGravity =false;
+            _rb.velocity = Vector3.zero;
+        }
+
+        private void Jump()
+        {
+            if (Input.GetKeyDown(KeyCode.Space) && IsGrounded)
+            {
+                _rb.AddForce(new Vector3(0f, _jumpForce,0), ForceMode.Impulse);
+            }
+        }
+    
+
+        private void OnTriggerEnter(Collider collision)
+        {
+            if (collision.CompareTag("Ladder"))
+            {
+                _isClimbing = true;
+                _rb.useGravity = false;
+            }
+        }
+
+        private void OnTriggerExit(Collider collision)
+        {
+            if (collision.CompareTag("Ladder"))
+            {
+                _isClimbing = false;
+                _rb.useGravity = true;
+            }
+        }
+    
+
     }
 }
