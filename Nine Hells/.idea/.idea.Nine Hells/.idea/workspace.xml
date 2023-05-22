@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9278631-f436-40de-b250-ac2bd0a5f5cd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Character/MoralityBarGUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Character/MoralityBarGUI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Character/Player.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Character/Player.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Character/Points.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Character/Points.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Nine Hells/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Nine Hells/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Hell 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Hell 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Hell 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Hell 2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/MODELS/plain 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/MODELS/plain 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/MODELS/plain 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/MODELS/plain 2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/MODELS/plain 3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/MODELS/plain 3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Templete.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Templete.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/UI/InteractableGO_Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/UI/InteractableGO_Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/ladder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/ladder.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/ladder.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/ladder.prefab.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
