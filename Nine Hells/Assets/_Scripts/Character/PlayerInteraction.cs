@@ -1,26 +1,35 @@
-using System.Collections;
-using System.Collections.Generic;
-using _Scripts;
+using _Scripts.Interactions;
 using UnityEngine;
 
-public class PlayerInteraction : MonoBehaviour
+namespace _Scripts.Character
 {
-    // private void OnCollisionEnter(Collision collision)
-    // {
-    //     
-    //     if (collision.gameObject.TryGetComponent<IInteractable>(out var interactable))
-    //     {
-    //         interactable.Interact();
-    //     }
-    // }
-    
-    
-    private void OnTriggerEnter(Collider Collider)
+    public class PlayerInteraction : MonoBehaviour
     {
-        
-        if (Collider.gameObject.TryGetComponent<IInteractable>(out var interactable))
+        private void OnCollisionEnter(Collision collision)
         {
+
+            if (!collision.gameObject.TryGetComponent<IInteractable>(out var interactable)) return;
             interactable.Interact();
+        }
+        
+        private void OnTriggerEnter(Collider other)
+        {
+
+            if (!other.gameObject.TryGetComponent<IInteractable>(out var interactable)) return;
+            interactable.Interact();
+        }
+
+        private void OnCollisionExit(Collision other)
+        {
+            if (!other.gameObject.TryGetComponent<IInteractable>(out var interactable)) return;
+            ((InteractionObject)interactable).Reset();
+        }
+
+        
+        private void OnTriggerExit(Collider other)
+        {
+            if (!other.gameObject.TryGetComponent<IInteractable>(out var interactable)) return;
+            ((InteractionObject)interactable).Reset();
         }
     }
 }

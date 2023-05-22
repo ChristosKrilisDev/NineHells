@@ -2,12 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9278631-f436-40de-b250-ac2bd0a5f5cd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/InteractionCanvas.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/InteractionCanvas.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionsSO.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionsSO/MoveInteraction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionsSO/MoveInteraction.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionsSO/TalkInteraction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionsSO/UseInteraction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionsSO/UseInteraction.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Nine Hells/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Nine Hells/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level Design.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level Design.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/MODELS/plain 3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/MODELS/plain 3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Interaction.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Interaction/TalkInteraction.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Interaction/TalkInteraction.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Hell 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Hell 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/ladder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/ladder.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Character/GroundChecker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Character/GroundChecker.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Character/PlayerInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Character/PlayerInteraction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Interactions/IInteractable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Interactions/IInteractable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Interactions/Interaction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionsSO/Interaction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Interactions/Interaction.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionsSO/Interaction.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Interactions/TalkInteraction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Interactions/TalkInteraction.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionsSO/TalkInteraction.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
