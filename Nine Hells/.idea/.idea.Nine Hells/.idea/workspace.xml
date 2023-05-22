@@ -2,27 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9278631-f436-40de-b250-ac2bd0a5f5cd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Character/MoralityBarGUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Character/MoralityBarGUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Character/Player.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Character/Player.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Character/Points.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scripts/Character/Points.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Nine Hells/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Nine Hells/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/!_Interaction/Interactions_Hell 1/MoveInteraction.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/!_Interaction/Interactions_Hell 1/MoveInteraction.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/!_Interaction/Interactions_Hell 1/TalkInteraction.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/!_Interaction/Interactions_Hell 1/TalkInteraction.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/!_Interaction/Interactions_Hell 1/UseInteraction.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/!_Interaction/Interactions_Hell 1/UseInteraction.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Hell 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Hell 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Interaction Object.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Interaction Object.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/NPC.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/NPC.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/ladder.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/ladder.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/ladder.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/ladder.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/ladder_1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/ladder_1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Character/PlayerInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Character/PlayerInteraction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionsSO/Interaction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionsSO/Interaction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionsSO/MoveInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionsSO/MoveInteraction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionsSO/TalkInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionsSO/TalkInteraction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionsSO/UseInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionsSO/UseInteraction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Player.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
