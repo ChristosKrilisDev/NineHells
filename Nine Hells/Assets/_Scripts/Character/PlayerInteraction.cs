@@ -6,31 +6,50 @@ namespace _Scripts.Character
     public class PlayerInteraction : MonoBehaviour
     {
 
+        private IInteractable _focusedObj;
+
+        void Update()
+        {
+            InputInteract(_focusedObj);
+        }
+
         private void InputInteract(IInteractable interactable)
         {
+            if(interactable == null) return;
+            
             if (Input.GetKeyDown(KeyCode.E))
             {
                 ((InteractionObject)interactable).Interact();
             }
         }
-        
-        private void OnCollisionEnter(Collision collision)
-        {
 
-            if (!collision.gameObject.TryGetComponent<IInteractable>(out var interactable)) return;
-            interactable.DisplayUI();
-            
-            InputInteract(interactable);
-        }
-        
-        private void OnTriggerEnter(Collider other)
+        private void OnEnter(Collision other)
         {
-
             if (!other.gameObject.TryGetComponent<IInteractable>(out var interactable)) return;
             interactable.DisplayUI();
-            
-            InputInteract(interactable);
+            _focusedObj = interactable;
         }
+        
+        private void OnEnter(Collider other)
+        {
+            if (!other.gameObject.TryGetComponent<IInteractable>(out var interactable)) return;
+            interactable.DisplayUI();
+            _focusedObj = interactable;
+        }
+        
+        
+        
+        private void OnCollisionEnter(Collision other)
+        {
+
+            OnEnter(other);
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            OnEnter(other);
+        }
+        
 
         private void OnCollisionExit(Collision other)
         {
@@ -38,7 +57,6 @@ namespace _Scripts.Character
             ((InteractionObject)interactable).Reset();
         }
 
-        
         private void OnTriggerExit(Collider other)
         {
             if (!other.gameObject.TryGetComponent<IInteractable>(out var interactable)) return;

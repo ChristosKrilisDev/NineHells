@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanInteract: 1
   interactionType: 3
+  _moveObject: {fileID: 0}
+  _initialPos: {x: 0, y: 0, z: 0}
+  _placementTransform: {x: 0, y: 0, z: 0}
