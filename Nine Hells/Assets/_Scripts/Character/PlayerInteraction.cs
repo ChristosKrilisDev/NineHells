@@ -10,7 +10,7 @@ public class PlayerInteraction : MonoBehaviour
         
         if (collision.gameObject.TryGetComponent<IInteractable>(out var interactable))
         {
-            // interactable.
+            interactable.Interact();
         }
     }
 }
