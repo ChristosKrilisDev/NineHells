@@ -53,6 +53,8 @@ namespace _Scripts.Character
         {
             if (Input.GetKeyDown(KeyCode.Space) && IsGrounded)
             {
+                // var force = Mathf.Min(_rb.velocity.y, _jumpForce);
+                //todo: fix max velocity
                 _rb.AddForce(new Vector3(0f, _jumpForce,0), ForceMode.Impulse);
             }
         }
