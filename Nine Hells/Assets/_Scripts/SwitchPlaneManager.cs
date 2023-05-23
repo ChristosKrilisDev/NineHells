@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 
@@ -13,10 +15,13 @@ public class SwitchPlaneManager : MonoBehaviour
     }
     
     
-    [SerializeField] private List<PlaneObject> _planeObjects;
-    
-    
-   
+    [SerializeField] private PlaneObject[] _planeObjects;
+
+    private void Awake()
+    {
+        _planeObjects = FindObjectsOfType<PlaneObject>();
+    }
+
     void Start()
     {
         
