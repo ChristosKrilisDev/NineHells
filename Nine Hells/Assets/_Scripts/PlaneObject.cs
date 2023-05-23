@@ -61,7 +61,6 @@ public class PlaneObject : MonoBehaviour
         while (startValue <= 2)
         {
             startValue += 0.1f;
-            Debug.Log("dissolve : " + startValue);
 
             _meshRenderer.material.SetFloat("_DisAmount", startValue);
 
