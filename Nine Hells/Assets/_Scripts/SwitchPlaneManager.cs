@@ -25,10 +25,7 @@ public class SwitchPlaneManager : MonoBehaviour
         _planeObjects = FindObjectsOfType<PlaneObject>();
     }
 
-    void Start()
-    {
-        
-    }
+
 
     // Update is called once per frame
     void Update()
@@ -46,7 +43,7 @@ public class SwitchPlaneManager : MonoBehaviour
         }
     }
 
-    private void SwitchPlane(PlaneState planeState)
+    public void SwitchPlane(PlaneState planeState)
     {
         if(CurrentPlaneState == planeState) return;
         
