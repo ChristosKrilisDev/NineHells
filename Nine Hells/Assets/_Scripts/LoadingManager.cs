@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class LoadingManager : MonoBehaviour
 {
 
-    static LoadingManager instance;
+    public static LoadingManager instance;
     private int currentLevel = 0;
 
     void Start()
@@ -22,7 +22,8 @@ public class LoadingManager : MonoBehaviour
         }
 
         //StartCoroutine(Load());
-
+        if (SceneManager.GetActiveScene().name.Equals("SampleScene")) currentLevel = 0;
+        else currentLevel = int.Parse(SceneManager.GetActiveScene().name.Replace("Hell ", ""));
     }
 
     IEnumerator Load()

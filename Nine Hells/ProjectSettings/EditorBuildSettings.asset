@@ -8,4 +8,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Levels/Hell 1.unity
+    guid: 6bed872c78265c24a8c47178461c1af4
+  - enabled: 1
+    path: Assets/Scenes/Levels/Hell 2.unity
+    guid: d4bd26bdecfc34648bd0f85fefb33ea7
+  - enabled: 1
+    path: Assets/Scenes/Levels/Hell 3.unity
+    guid: e223931d2f79041448d995b1b5296b3d
+  - enabled: 1
+    path: Assets/Scenes/Levels/Hell 4.unity
+    guid: 44893e934c50015408b75f01696f6dbf
+  - enabled: 1
+    path: Assets/Scenes/Levels/Hell 5.unity
+    guid: 8af5b3bbaa52e854b84f54cce421dcd6
+  - enabled: 1
+    path: Assets/Scenes/Levels/Hell 6.unity
+    guid: b730205e9eb84a147b4aef07079550fb
+  - enabled: 1
+    path: Assets/Scenes/Levels/Hell 7.unity
+    guid: b56e0f0557db95246a96c1fa9a35b16a
+  - enabled: 1
+    path: Assets/Scenes/Levels/Hell 8.unity
+    guid: 9ce8075f4813a5e4ca1afb2371e97083
+  - enabled: 1
+    path: Assets/Scenes/Levels/Hell 9.unity
+    guid: b9d15675ebed20e4bb234db18f8ef51d
   m_configObjects: {}
