@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-442867555935509615
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -7,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DISSOLVE_SHADOW
-  m_Shader: {fileID: -6465566751694194690, guid: d8f9cfa02c5cd4a48ab7ef7eb55bca60,
+  m_Name: SIMPLE_DISSOLVE
+  m_Shader: {fileID: -6465566751694194690, guid: e7212dc179c5b014cb29683e2de0bb3f,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -21,14 +34,6 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - Texture2D_12A70E72:
-        m_Texture: {fileID: 2800000, guid: b362062d6ff941049bc8bc28da4c9518, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_FC39119A:
-        m_Texture: {fileID: 2800000, guid: 4e2f609bcdac8c945ade7fa5bffcbb3b, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _BaseMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -69,12 +74,16 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_0248b12bf1d14f8f8ac7a1285ec77ae5_Texture_1:
+        m_Texture: {fileID: 2800000, guid: b362062d6ff941049bc8bc28da4c9518, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2D:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 5f2a108eb023faf43a809979fd3d38f2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -91,17 +100,6 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - BOOLEAN_5A79FB9C: 0
-    - Vector1_1D84F9A2: 0.3
-    - Vector1_31CDA308: 0.178
-    - Vector1_588C7CCF: 0.295
-    - Vector1_6A1B8813: 0
-    - Vector1_8500AF78: 0.85
-    - Vector1_8DAC8216: -10
-    - Vector1_994C6DF6: 0.1
-    - Vector1_A5E1F8A4: 0
-    - Vector1_C9C6EDD8: 0
-    - Vector1_F0B3E7CE: 0.1
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -109,18 +107,18 @@ Material:
     - _ClearCoatSmoothness: 0
     - _Cull: 2
     - _Cutoff: 0.5
+    - _CutoffHeight: 0
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _DisAmount: 2.0000005
-    - _Dissolve_Value: 0.39
     - _DstBlend: 0
-    - _Edge_Width: 0.1
+    - _EdgeWidth: 0.05
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
-    - _Noise_Scale: 30
+    - _NoiseScale: 50
+    - _NoiseStrength: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
@@ -134,23 +132,10 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_ED0EAD33: {r: 0.4056604, g: 0.4056604, b: 0.4056604, a: 1}
+    - _Albedo: {r: 0.1462264, g: 1, b: 0.16774528, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.95283014, g: 0.95283014, b: 0.95283014, a: 1}
-    - _Edge_Color: {r: 0.5, g: 0.22272125, b: 0.1721698, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EdgeColor: {r: 0, g: 3.262745, b: 23.96863, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &5543796402467986084
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 5
