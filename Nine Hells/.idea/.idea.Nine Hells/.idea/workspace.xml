@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9278631-f436-40de-b250-ac2bd0a5f5cd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Interaction Object.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Interaction Object.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/NPC.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/NPC.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/ladder_interactable.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/ladder_interactable.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/PlaneObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/PlaneObject.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/SwitchPlaneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/SwitchPlaneManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +73,7 @@
       <workItem from="1684739285318" duration="1473000" />
       <workItem from="1684745704937" duration="917000" />
       <workItem from="1684766305039" duration="4226000" />
-      <workItem from="1684843408408" duration="2709000" />
+      <workItem from="1684843408408" duration="3121000" />
     </task>
     <servers />
   </component>

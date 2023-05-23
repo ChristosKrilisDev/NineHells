@@ -11,11 +11,14 @@ public class SwitchPlaneManager : MonoBehaviour
 
     public enum PlaneState
     {
-
+        MaterialPlane,
+        ShadowPlane,
+        Switching
     }
+
+    public static PlaneState CurrentPlaneState = PlaneState.MaterialPlane;
     
-    
-    [SerializeField] private PlaneObject[] _planeObjects;
+    private PlaneObject[] _planeObjects;
 
     private void Awake()
     {
@@ -30,20 +33,26 @@ public class SwitchPlaneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(CurrentPlaneState == PlaneState.Switching) return;
+        
         if (Input.GetKeyDown(KeyCode.F))
         {
-            foreach (var po in _planeObjects)
-            {
-                po.SwitchToShadowPlane();
-            }
+            SwitchPlane(PlaneState.ShadowPlane);
         }
         
         if (Input.GetKeyDown(KeyCode.G))
         {
-            foreach (var po in _planeObjects)
-            {
-                po.SwitchToMaterialPlane();
-            }
+            SwitchPlane(PlaneState.MaterialPlane);
+        }
+    }
+
+    private void SwitchPlane(PlaneState planeState)
+    {
+        if(CurrentPlaneState == planeState) return;
+        
+        foreach (var po in _planeObjects)
+        {
+            po.SwitchPlane(planeState);
         }
     }
 }
