@@ -23,6 +23,9 @@ public class SwitchPlaneManager : MonoBehaviour
     private void Awake()
     {
         _planeObjects = FindObjectsOfType<PlaneObject>();
+        
+        
+        SwitchPlane(PlaneState.MaterialPlane);
     }
 
 
@@ -46,6 +49,9 @@ public class SwitchPlaneManager : MonoBehaviour
     public void SwitchPlane(PlaneState planeState)
     {
         if(CurrentPlaneState == planeState) return;
+
+        HUD.Instance.PlayerStatsGUI.ChangePlaneUI(planeState);
+        
         
         foreach (var po in _planeObjects)
         {

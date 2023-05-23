@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9278631-f436-40de-b250-ac2bd0a5f5cd" name="Changes" comment="" />
+    <list default="true" id="b9278631-f436-40de-b250-ac2bd0a5f5cd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Nine Hells/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Nine Hells/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Hell 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Hell 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/SwitchPlaneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/SwitchPlaneManager.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +14,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/PlaneObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/PlayerStatsGUI.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -70,7 +76,7 @@
       <workItem from="1684739285318" duration="1473000" />
       <workItem from="1684745704937" duration="917000" />
       <workItem from="1684766305039" duration="4226000" />
-      <workItem from="1684843408408" duration="3596000" />
+      <workItem from="1684843408408" duration="5802000" />
     </task>
     <servers />
   </component>
