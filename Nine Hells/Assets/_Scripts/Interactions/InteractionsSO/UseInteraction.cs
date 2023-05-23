@@ -19,7 +19,13 @@ namespace _Scripts.Interactions.InteractionsSO
             base.ResetData();
             CanInteract = false;
             gameObject.tag = _tagKey.ToString();
-            transform.DOLocalMove(_placementTransform.localPosition, 0.4f);
+            GetComponent<BoxCollider>().enabled = false;
+            transform.DOLocalMove(_placementTransform.localPosition, 0.4f)
+                     .OnComplete(() =>
+                        {
+                            GetComponent<BoxCollider>().enabled = true;
+                        }
+                      );
             transform.DOLocalRotate(_placementTransform.transform.eulerAngles, 0.4f);
         }
 

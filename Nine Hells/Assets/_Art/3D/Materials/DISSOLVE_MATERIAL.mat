@@ -26,7 +26,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_FC39119A:
-        m_Texture: {fileID: 2800000, guid: 6ac2c721b5fd66e4b88799e32b53ae47, type: 3}
+        m_Texture: {fileID: 2800000, guid: 44a0d9dc1b4b1aa4d97173af088de2f5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -111,7 +111,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _DisAmount: -2
+    - _DisAmount: -1.4099973
     - _Dissolve_Value: 0.39
     - _DstBlend: 0
     - _Edge_Width: 0.1
@@ -136,7 +136,7 @@ Material:
     m_Colors:
     - Color_ED0EAD33: {r: 0.2830189, g: 0.2830189, b: 0.2830189, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.35925993, g: 0.6792453, b: 0.13136342, a: 1}
     - _Edge_Color: {r: 0.5, g: 0.22272125, b: 0.1721698, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
