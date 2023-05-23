@@ -305,6 +305,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Templete
       objectReference: {fileID: 0}
+    - target: {fileID: 4883367771402207912, guid: 91494ea3206f73e43a402f11cc2c22bc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4883367771492130638, guid: 91494ea3206f73e43a402f11cc2c22bc,
         type: 3}
       propertyPath: m_IsActive
@@ -1011,6 +1016,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 652635d26fc92294dbc1b4a1f913dfbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  portal: {fileID: 1889924419}
+  player: {fileID: 926903948}
 --- !u!4 &229937166
 Transform:
   m_ObjectHideFlags: 0
@@ -3552,6 +3559,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912234071}
   m_Mesh: {fileID: 2534964839176971238, guid: 659b46c18961aca41aeccb7156ad5807, type: 3}
+--- !u!1 &926903948 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6045864165680844334, guid: 91494ea3206f73e43a402f11cc2c22bc,
+    type: 3}
+  m_PrefabInstance: {fileID: 27976133}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &933807530
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5852,6 +5865,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6508586394100717914, guid: af259f31a4ce45f4db537c17928c9df7,
     type: 3}
   m_PrefabInstance: {fileID: 1860055089}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1889924419 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4883367771402207912, guid: 91494ea3206f73e43a402f11cc2c22bc,
+    type: 3}
+  m_PrefabInstance: {fileID: 27976133}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1894875062
 PrefabInstance:

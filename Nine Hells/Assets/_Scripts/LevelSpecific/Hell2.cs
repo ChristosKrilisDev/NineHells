@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class Hell2 : MonoBehaviour
 {
+    public GameObject portal;
+    public GameObject player;
     public void OnNpcHelped()
     {
-        Debug.Log("Done!");
+        portal.SetActive(true);
+
+        portal.transform.position = player.transform.position - Vector3.right * 2f;
     }
 }
