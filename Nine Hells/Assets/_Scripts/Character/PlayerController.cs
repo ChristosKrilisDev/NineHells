@@ -24,6 +24,12 @@ namespace _Scripts.Character
 
         private void FixedUpdate()
         {
+            if (SwitchPlaneManager.CurrentPlaneState == SwitchPlaneManager.PlaneState.Switching)
+            {
+                _rb.velocity = Vector3.zero;
+                return;
+            }
+
             var moveX = Input.GetAxisRaw("Horizontal");
             _rb.velocity = new Vector2(moveX * _moveSpeed, _rb.velocity.y);
             
@@ -38,6 +44,12 @@ namespace _Scripts.Character
         
         private void Update()
         {
+            if (SwitchPlaneManager.CurrentPlaneState == SwitchPlaneManager.PlaneState.Switching)
+            {
+                _rb.velocity = Vector3.zero;
+                return;
+            }
+
             ClimbInput();
             Jump();
         }

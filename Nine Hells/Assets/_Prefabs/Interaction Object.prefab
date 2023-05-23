@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 518945178882372604}
   - component: {fileID: 518945178882372595}
   - component: {fileID: 46127696}
-  m_Layer: 0
+  - component: {fileID: 8973644099213005162}
+  m_Layer: 6
   m_Name: Interaction Object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,6 +129,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanInteract: 1
   InteractionType: 2
+--- !u!114 &8973644099213005162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518945178882372594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 2decbb4688b7ddc4b941147fc705792e, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1001 &8171715338875605542
 PrefabInstance:
   m_ObjectHideFlags: 0

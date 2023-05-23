@@ -108,7 +108,8 @@ GameObject:
   - component: {fileID: 7541253906576452048}
   - component: {fileID: 7541253906576452062}
   - component: {fileID: 7541253906576452049}
-  m_Layer: 0
+  - component: {fileID: 1565094493}
+  m_Layer: 6
   m_Name: Icosphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,6 +181,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1565094493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541253906576452051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 9989b5334426205449cadff27f4988d7, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1 &7541253906609934386
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,7 +210,8 @@ GameObject:
   - component: {fileID: 7541253906609934387}
   - component: {fileID: 7541253906609934385}
   - component: {fileID: 7541253906609934384}
-  m_Layer: 0
+  - component: {fileID: 655294483}
+  m_Layer: 6
   m_Name: Icosphere.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -263,6 +283,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &655294483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541253906609934386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 9989b5334426205449cadff27f4988d7, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1 &7541253906616635210
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,7 +312,8 @@ GameObject:
   - component: {fileID: 7541253906616635211}
   - component: {fileID: 7541253906616635209}
   - component: {fileID: 7541253906616635208}
-  m_Layer: 0
+  - component: {fileID: 168289462}
+  m_Layer: 6
   m_Name: Icosphere.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -346,6 +385,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &168289462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541253906616635210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 9989b5334426205449cadff27f4988d7, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1 &7541253906625033150
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,7 +414,8 @@ GameObject:
   - component: {fileID: 7541253906625033151}
   - component: {fileID: 7541253906625033149}
   - component: {fileID: 7541253906625033148}
-  m_Layer: 0
+  - component: {fileID: 1749292180}
+  m_Layer: 6
   m_Name: Icosphere.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -429,6 +487,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1749292180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541253906625033150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 9989b5334426205449cadff27f4988d7, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1 &7541253906661498219
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,7 +516,8 @@ GameObject:
   - component: {fileID: 7541253906661498216}
   - component: {fileID: 7541253906661498134}
   - component: {fileID: 7541253906661498217}
-  m_Layer: 0
+  - component: {fileID: 453960428}
+  m_Layer: 6
   m_Name: Cylinder.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -512,6 +589,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &453960428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541253906661498219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 9989b5334426205449cadff27f4988d7, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1 &7541253906695115115
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,7 +618,8 @@ GameObject:
   - component: {fileID: 7541253906695115112}
   - component: {fileID: 7541253906695115030}
   - component: {fileID: 7541253906695115113}
-  m_Layer: 0
+  - component: {fileID: 920329239}
+  m_Layer: 6
   m_Name: Icosphere.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -595,6 +691,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &920329239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541253906695115115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 9989b5334426205449cadff27f4988d7, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1 &7541253906724790870
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,7 +720,8 @@ GameObject:
   - component: {fileID: 7541253906724790871}
   - component: {fileID: 7541253906724790869}
   - component: {fileID: 7541253906724790868}
-  m_Layer: 0
+  - component: {fileID: 1711027814}
+  m_Layer: 6
   m_Name: Icosphere.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -678,6 +793,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1711027814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541253906724790870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 9989b5334426205449cadff27f4988d7, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1 &7541253906849562454
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,7 +822,8 @@ GameObject:
   - component: {fileID: 7541253906849562455}
   - component: {fileID: 7541253906849562453}
   - component: {fileID: 7541253906849562452}
-  m_Layer: 0
+  - component: {fileID: 33942040}
+  m_Layer: 6
   m_Name: Cube.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -761,6 +895,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &33942040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541253906849562454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 9989b5334426205449cadff27f4988d7, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1 &7541253906875679109
 GameObject:
   m_ObjectHideFlags: 0
@@ -772,7 +924,8 @@ GameObject:
   - component: {fileID: 7541253906875679106}
   - component: {fileID: 7541253906875679104}
   - component: {fileID: 7541253906875679107}
-  m_Layer: 0
+  - component: {fileID: 410481361}
+  m_Layer: 6
   m_Name: Cube.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -844,6 +997,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &410481361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541253906875679109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 9989b5334426205449cadff27f4988d7, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1 &7541253906881436724
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,7 +1026,8 @@ GameObject:
   - component: {fileID: 7541253906881436725}
   - component: {fileID: 7541253906881436723}
   - component: {fileID: 7541253906881436722}
-  m_Layer: 0
+  - component: {fileID: 951014349}
+  m_Layer: 6
   m_Name: Icosphere.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -927,6 +1099,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &951014349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541253906881436724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 9989b5334426205449cadff27f4988d7, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1 &7541253906947780039
 GameObject:
   m_ObjectHideFlags: 0
@@ -938,7 +1128,8 @@ GameObject:
   - component: {fileID: 7541253906947780036}
   - component: {fileID: 7541253906947780034}
   - component: {fileID: 7541253906947780037}
-  m_Layer: 0
+  - component: {fileID: 745685343}
+  m_Layer: 6
   m_Name: Icosphere.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1010,6 +1201,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &745685343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541253906947780039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 9989b5334426205449cadff27f4988d7, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1 &7541253907007703338
 GameObject:
   m_ObjectHideFlags: 0
@@ -1021,7 +1230,8 @@ GameObject:
   - component: {fileID: 7541253907007703339}
   - component: {fileID: 7541253907007703337}
   - component: {fileID: 7541253907007703336}
-  m_Layer: 0
+  - component: {fileID: 348687291}
+  m_Layer: 6
   m_Name: Cube.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1093,6 +1303,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &348687291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541253907007703338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 9989b5334426205449cadff27f4988d7, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1 &7541253907194483787
 GameObject:
   m_ObjectHideFlags: 0
@@ -1239,7 +1467,8 @@ GameObject:
   - component: {fileID: 7541253907336288907}
   - component: {fileID: 7541253907336288905}
   - component: {fileID: 7541253907336288904}
-  m_Layer: 0
+  - component: {fileID: 1628802392}
+  m_Layer: 6
   m_Name: Cylinder.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1311,6 +1540,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1628802392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541253907336288906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 9989b5334426205449cadff27f4988d7, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1 &7541253907340729410
 GameObject:
   m_ObjectHideFlags: 0
@@ -1322,7 +1569,8 @@ GameObject:
   - component: {fileID: 7541253907340729411}
   - component: {fileID: 7541253907340729409}
   - component: {fileID: 7541253907340729408}
-  m_Layer: 0
+  - component: {fileID: 885068852}
+  m_Layer: 6
   m_Name: Icosphere.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1394,6 +1642,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &885068852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541253907340729410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 9989b5334426205449cadff27f4988d7, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1 &7541253907375071265
 GameObject:
   m_ObjectHideFlags: 0
@@ -1405,7 +1671,8 @@ GameObject:
   - component: {fileID: 7541253907375071278}
   - component: {fileID: 7541253907375071276}
   - component: {fileID: 7541253907375071279}
-  m_Layer: 0
+  - component: {fileID: 1118299804}
+  m_Layer: 6
   m_Name: Icosphere.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1477,6 +1744,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1118299804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541253907375071265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 9989b5334426205449cadff27f4988d7, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1 &7541253907611678812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1488,7 +1773,8 @@ GameObject:
   - component: {fileID: 7541253907611678813}
   - component: {fileID: 7541253907611678811}
   - component: {fileID: 7541253907611678810}
-  m_Layer: 0
+  - component: {fileID: 890207030}
+  m_Layer: 6
   m_Name: Cube.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1560,6 +1846,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &890207030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541253907611678812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 9989b5334426205449cadff27f4988d7, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1 &7541253907898114280
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,7 +1875,8 @@ GameObject:
   - component: {fileID: 7541253907898114281}
   - component: {fileID: 7541253907898114199}
   - component: {fileID: 7541253907898114198}
-  m_Layer: 0
+  - component: {fileID: 1759394184}
+  m_Layer: 6
   m_Name: Icosphere.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1643,6 +1948,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1759394184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541253907898114280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 9989b5334426205449cadff27f4988d7, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1 &7541253907978760442
 GameObject:
   m_ObjectHideFlags: 0
@@ -1699,7 +2022,8 @@ GameObject:
   - component: {fileID: 7541253908048257623}
   - component: {fileID: 7541253908048257621}
   - component: {fileID: 7541253908048257620}
-  m_Layer: 0
+  - component: {fileID: 2121492445}
+  m_Layer: 6
   m_Name: Icosphere.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1771,6 +2095,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2121492445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541253908048257622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 9989b5334426205449cadff27f4988d7, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1 &7541253908055718993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1782,7 +2124,8 @@ GameObject:
   - component: {fileID: 7541253908055719006}
   - component: {fileID: 7541253908055719004}
   - component: {fileID: 7541253908055719007}
-  m_Layer: 0
+  - component: {fileID: 2003394533}
+  m_Layer: 6
   m_Name: Icosphere.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1854,6 +2197,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2003394533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541253908055718993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 9989b5334426205449cadff27f4988d7, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1 &7541253908058605480
 GameObject:
   m_ObjectHideFlags: 0
@@ -1942,7 +2303,8 @@ GameObject:
   - component: {fileID: 7541253908071709393}
   - component: {fileID: 7541253908071709407}
   - component: {fileID: 7541253908071709406}
-  m_Layer: 0
+  - component: {fileID: 674835861}
+  m_Layer: 6
   m_Name: Icosphere.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2014,6 +2376,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &674835861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541253908071709392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 9989b5334426205449cadff27f4988d7, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1 &7541253908157012975
 GameObject:
   m_ObjectHideFlags: 0
@@ -2025,7 +2405,8 @@ GameObject:
   - component: {fileID: 7541253908157012972}
   - component: {fileID: 7541253908157012970}
   - component: {fileID: 7541253908157012973}
-  m_Layer: 0
+  - component: {fileID: 1193090409}
+  m_Layer: 6
   m_Name: Cube.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2097,6 +2478,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1193090409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541253908157012975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 9989b5334426205449cadff27f4988d7, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1 &7541253908165401261
 GameObject:
   m_ObjectHideFlags: 0
@@ -2108,7 +2507,8 @@ GameObject:
   - component: {fileID: 7541253908165401258}
   - component: {fileID: 7541253908165401256}
   - component: {fileID: 7541253908165401259}
-  m_Layer: 0
+  - component: {fileID: 1433789088}
+  m_Layer: 6
   m_Name: Icosphere.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2180,6 +2580,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1433789088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541253908165401261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 9989b5334426205449cadff27f4988d7, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1 &7541253908204361400
 GameObject:
   m_ObjectHideFlags: 0
@@ -2306,7 +2724,8 @@ GameObject:
   - component: {fileID: 7541253908277958130}
   - component: {fileID: 7541253908277958128}
   - component: {fileID: 7541253908277958131}
-  m_Layer: 0
+  - component: {fileID: 1773619318}
+  m_Layer: 6
   m_Name: Icosphere.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2378,6 +2797,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1773619318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541253908277958133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 9989b5334426205449cadff27f4988d7, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1 &7541253908309550522
 GameObject:
   m_ObjectHideFlags: 0
@@ -2389,7 +2826,8 @@ GameObject:
   - component: {fileID: 7541253908309550523}
   - component: {fileID: 7541253908309550521}
   - component: {fileID: 7541253908309550520}
-  m_Layer: 0
+  - component: {fileID: 1219675979}
+  m_Layer: 6
   m_Name: Cube.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2461,6 +2899,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1219675979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541253908309550522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 9989b5334426205449cadff27f4988d7, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1 &7541253908362760810
 GameObject:
   m_ObjectHideFlags: 0
@@ -2472,7 +2928,8 @@ GameObject:
   - component: {fileID: 7541253908362760811}
   - component: {fileID: 7541253908362760809}
   - component: {fileID: 7541253908362760808}
-  m_Layer: 0
+  - component: {fileID: 1501223771}
+  m_Layer: 6
   m_Name: Cube.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2544,6 +3001,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1501223771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541253908362760810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 9989b5334426205449cadff27f4988d7, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1 &7541253908394044027
 GameObject:
   m_ObjectHideFlags: 0
@@ -2555,7 +3030,8 @@ GameObject:
   - component: {fileID: 7541253908394044024}
   - component: {fileID: 7541253908394044006}
   - component: {fileID: 7541253908394044025}
-  m_Layer: 0
+  - component: {fileID: 151337059}
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2627,6 +3103,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &151337059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541253908394044027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 9989b5334426205449cadff27f4988d7, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1 &7541253908551144343
 GameObject:
   m_ObjectHideFlags: 0

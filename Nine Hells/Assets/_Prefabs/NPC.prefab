@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 8773943462510433607}
   - component: {fileID: 8773943462510433595}
   - component: {fileID: 1729110303}
-  m_Layer: 0
+  - component: {fileID: 1894381068887981165}
+  m_Layer: 6
   m_Name: NPC
   m_TagString: NPC
   m_Icon: {fileID: 0}
@@ -131,6 +132,24 @@ MonoBehaviour:
   InteractionType: 1
   dialogues:
   - fwafwafwa
+--- !u!114 &1894381068887981165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8773943462510433600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 9989b5334426205449cadff27f4988d7, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 2decbb4688b7ddc4b941147fc705792e, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1001 &8773943462180560026
 PrefabInstance:
   m_ObjectHideFlags: 0

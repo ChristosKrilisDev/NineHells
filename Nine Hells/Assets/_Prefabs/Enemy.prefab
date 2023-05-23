@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 5234366472639163637}
   - component: {fileID: 3559949843038509265}
   - component: {fileID: 5234366472639163541}
-  m_Layer: 0
+  - component: {fileID: 3559949841683950573}
+  m_Layer: 6
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -29,7 +30,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5234366472639163534}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 12.2, y: 0.1918391, z: 0.012515545}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -66,7 +67,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 44f9af453821d1c44889843999609586, type: 2}
+  - {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -144,6 +145,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b145e9adf3704544abb8a37a1b481b45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _hp: 1
+--- !u!114 &3559949841683950573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5234366472639163534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: e466a6bf5975fa449b41d1043eb34daf, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: 2decbb4688b7ddc4b941147fc705792e, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1001 &5234366471218832724
 PrefabInstance:
   m_ObjectHideFlags: 0
