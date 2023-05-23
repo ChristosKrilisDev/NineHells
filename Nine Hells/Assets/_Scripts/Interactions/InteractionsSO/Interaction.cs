@@ -6,10 +6,10 @@ namespace _Scripts.Interactions.InteractionsSO
         public bool CanInteract = true;
         public InteractionType InteractionType;
 
-        public virtual void Interact()
-        {
-
-        }
+        //public virtual void Interact()
+        //{
+        //    Debug.Log("TOM");
+        //}
 
         public virtual void ResetData()
         {
@@ -18,7 +18,7 @@ namespace _Scripts.Interactions.InteractionsSO
 
         public virtual void Run()
         {
-            
+            Debug.Log("TOM");
         }
     }
 }
