@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using _Scripts.Character;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -78,6 +79,7 @@ public class TextRendererManager : MonoBehaviour
             yield return dialogueSequence.WaitForCompletion();
         }
         textPanel.SetActive(false);
+        PlayerController.CanMove = true;
     }
 
     private bool _dialogueSkipped = false;

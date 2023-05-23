@@ -15,6 +15,7 @@ namespace _Scripts.Character
         [SerializeField]private float _climbSpeed = 0.5f;
         [SerializeField]private float _jumpForce = 5f;
 
+        public static bool CanMove = true;
         private Rigidbody _rb;
 
         private void Start()
@@ -24,7 +25,7 @@ namespace _Scripts.Character
 
         private void FixedUpdate()
         {
-            if (SwitchPlaneManager.CurrentPlaneState == SwitchPlaneManager.PlaneState.Switching)
+            if (SwitchPlaneManager.CurrentPlaneState == SwitchPlaneManager.PlaneState.Switching || !CanMove)
             {
                 _rb.velocity = Vector3.zero;
                 return;
@@ -44,7 +45,7 @@ namespace _Scripts.Character
         
         private void Update()
         {
-            if (SwitchPlaneManager.CurrentPlaneState == SwitchPlaneManager.PlaneState.Switching)
+            if (SwitchPlaneManager.CurrentPlaneState == SwitchPlaneManager.PlaneState.Switching || !CanMove)
             {
                 _rb.velocity = Vector3.zero;
                 return;

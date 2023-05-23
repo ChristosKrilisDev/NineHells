@@ -5,8 +5,12 @@ namespace _Scripts.Interactions
     public class InteractionObject : MonoBehaviour
     {
         [SerializeField] private Interaction _interaction;
+        public Interaction Interaction
+        {
+            get => _interaction;
+            set => _interaction = value;
+        }
 
-    
         public InteractionCanvas InteractionCanvas;
 
         public void Start()
