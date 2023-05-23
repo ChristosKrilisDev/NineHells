@@ -44,7 +44,8 @@ GameObject:
   - component: {fileID: 4710760802244400062}
   - component: {fileID: 8005608028149903893}
   - component: {fileID: 6691820180572838472}
-  m_Layer: 0
+  - component: {fileID: 1590340787}
+  m_Layer: 6
   m_Name: Circle.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,6 +117,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1590340787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3119682978684439033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: e466a6bf5975fa449b41d1043eb34daf, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: f6f28bb8b65ba9041be90e8a12d19c4c, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
 --- !u!1 &3333737966359855702
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,7 +146,8 @@ GameObject:
   - component: {fileID: 1466494534112510858}
   - component: {fileID: 8307175319642467427}
   - component: {fileID: 3177958683406296190}
-  m_Layer: 0
+  - component: {fileID: 1590340786}
+  m_Layer: 6
   m_Name: Cube.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -199,3 +219,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1590340786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3333737966359855702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialPlaneMat: {fileID: 2100000, guid: 28446ce9c7659ab4cbc98a28d365e820, type: 2}
+  _dissolveMaterialPlaneMat: {fileID: 2100000, guid: 0e637e74f71e8404ca81ef2caae968c9,
+    type: 2}
+  _shadowPlaneMat: {fileID: 2100000, guid: cc6427bc3f656cc45b6176935b811166, type: 2}
+  _dissolveShadowPlaneMat: {fileID: 2100000, guid: ebece4f6d9ae5e14bb55607796f05690,
+    type: 2}
