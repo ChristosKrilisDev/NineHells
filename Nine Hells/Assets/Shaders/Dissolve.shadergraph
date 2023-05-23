@@ -2620,7 +2620,7 @@
     "m_DefaultRefNameVersion": 0,
     "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Vector1_2B05D0C3",
-    "m_OverrideReferenceName": "_CutoffHeight",
+    "m_OverrideReferenceName": "_DisAmount",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,
     "m_CustomSlotLabel": "",

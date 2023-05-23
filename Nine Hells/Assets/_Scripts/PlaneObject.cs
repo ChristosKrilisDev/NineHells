@@ -50,15 +50,15 @@ public class PlaneObject : MonoBehaviour
     
     private void SwitchToShadowPlane()
     {
-        StartCoroutine(SwitchToHide(_materialGO, _dissolveShadowPlaneMat, -1.4f));
-        StartCoroutine(SwitchToShow(_shadowGO, _dissolveMaterialPlaneMat, 2, SwitchPlaneManager.PlaneState.ShadowPlane));
+        StartCoroutine(SwitchToHide(_materialGO, _dissolveShadowPlaneMat, 0f));
+        StartCoroutine(SwitchToShow(_shadowGO, _dissolveMaterialPlaneMat, 1, SwitchPlaneManager.PlaneState.ShadowPlane));
 
     }
 
     private void SwitchToMaterialPlane()
     {
-        StartCoroutine(SwitchToHide(_shadowGO, _dissolveShadowPlaneMat, -2f));
-        StartCoroutine(SwitchToShow(_materialGO, _dissolveMaterialPlaneMat, 2, SwitchPlaneManager.PlaneState.MaterialPlane));
+        StartCoroutine(SwitchToHide(_shadowGO, _dissolveShadowPlaneMat, 0f));
+        StartCoroutine(SwitchToShow(_materialGO, _dissolveMaterialPlaneMat, 1, SwitchPlaneManager.PlaneState.MaterialPlane));
     }
 
     private IEnumerator SwitchToHide(PlaneObjectParent parent, Material dissolveMat, float startValue)
@@ -74,14 +74,14 @@ public class PlaneObject : MonoBehaviour
 
         dissolveMat.SetFloat("_DisAmount", startValue);
 
-        while (startValue <= 2)
+        while (startValue <= 1)
         {
             startValue += 0.01f;
             dissolveMat.SetFloat("_DisAmount", startValue);
             yield return new WaitForSeconds(_delay);
         }
 
-        dissolveMat.SetFloat("_DisAmount", -2);
+        dissolveMat.SetFloat("_DisAmount", 0);
 
         parent.ResetMaterial();
         
@@ -96,7 +96,7 @@ public class PlaneObject : MonoBehaviour
 
     private IEnumerator SwitchToShow(PlaneObjectParent parent, Material dissolveMat, float startValue, SwitchPlaneManager.PlaneState state)
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.5f); //1.1f
 
         dissolveMat.SetFloat("_DisAmount", startValue);
 
@@ -109,7 +109,7 @@ public class PlaneObject : MonoBehaviour
             ch.SetMaterials(dissolveMat);
         }
 
-        while (startValue >= -2)
+        while (startValue >= 0)
         {
             startValue -= 0.01f;
             dissolveMat.SetFloat("_DisAmount", startValue);

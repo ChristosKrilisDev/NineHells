@@ -41,7 +41,6 @@ public class PlaneObjectChild : MonoBehaviour
         for (int i = 0; i < newMats.Length; i++)
         {
             newMats[i] = material;
-            Debug.Log("material "+ material.name);
         }
 
         MeshRenderer.materials = newMats;

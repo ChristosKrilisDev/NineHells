@@ -545,12 +545,12 @@ PrefabInstance:
     - target: {fileID: 3628006257449458366, guid: 91494ea3206f73e43a402f11cc2c22bc,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -4.327772e-16
+      value: 5.6560096e-18
       objectReference: {fileID: 0}
     - target: {fileID: 3628006257449458366, guid: 91494ea3206f73e43a402f11cc2c22bc,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -2.1893312e-17
+      value: -1.0946657e-17
       objectReference: {fileID: 0}
     - target: {fileID: 4883367769742711739, guid: 91494ea3206f73e43a402f11cc2c22bc,
         type: 3}
@@ -562,6 +562,16 @@ PrefabInstance:
       propertyPath: _materialPlaneGO
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4883367769742711739, guid: 91494ea3206f73e43a402f11cc2c22bc,
+        type: 3}
+      propertyPath: _dissolveShadowPlaneMat
+      value: 
+      objectReference: {fileID: 2100000, guid: ca90359b74250c540b7f3cb7c732dc96, type: 2}
+    - target: {fileID: 4883367769742711739, guid: 91494ea3206f73e43a402f11cc2c22bc,
+        type: 3}
+      propertyPath: _dissolveMaterialPlaneMat
+      value: 
+      objectReference: {fileID: 2100000, guid: ab733e2b2c57ad34fb8d22d2587b51a9, type: 2}
     - target: {fileID: 4883367769742711739, guid: 91494ea3206f73e43a402f11cc2c22bc,
         type: 3}
       propertyPath: _shadowPlaneGOs.Array.size
@@ -705,12 +715,12 @@ PrefabInstance:
     - target: {fileID: 4883367771549423150, guid: 91494ea3206f73e43a402f11cc2c22bc,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -4.327772e-16
+      value: 5.6560096e-18
       objectReference: {fileID: 0}
     - target: {fileID: 4883367771549423150, guid: 91494ea3206f73e43a402f11cc2c22bc,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -2.1893312e-17
+      value: -1.0946657e-17
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6453381836295552221, guid: 91494ea3206f73e43a402f11cc2c22bc, type: 3}
