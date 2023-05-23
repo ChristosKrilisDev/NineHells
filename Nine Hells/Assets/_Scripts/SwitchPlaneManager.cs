@@ -1,7 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
+
 using UnityEngine;
 
 
@@ -24,8 +21,8 @@ public class SwitchPlaneManager : MonoBehaviour
     
     private PlaneObject[] _planeObjects;
     
-    [SerializeField] private GameObject _materialPlaneGO;
-    [SerializeField] private GameObject _shadowPlaneGO;
+    // [SerializeField] private GameObject _materialPlaneGO;
+    // [SerializeField] private GameObject _shadowPlaneGO;
     // private List<PlaneObject> _materialPlaneGOs;
     // private List<PlaneObject> _shadowPlaneGOs;
 
@@ -88,19 +85,19 @@ public class SwitchPlaneManager : MonoBehaviour
         if(CurrentPlaneState == planeState) return;
 
         CurrentPlaneState = planeState;
-        
-        if (CurrentPlaneState == PlaneState.MaterialPlane)
-        {
-          _materialPlaneGO.SetActive(true);   
-          _shadowPlaneGO.SetActive(false);
-
-        }
-        else if(CurrentPlaneState == PlaneState.ShadowPlane)
-        {
-            _shadowPlaneGO.SetActive(true);
-            _materialPlaneGO.SetActive(false);   
-
-        }
+        //
+        // if (CurrentPlaneState == PlaneState.MaterialPlane)
+        // {
+        //   _materialPlaneGO.SetActive(true);   
+        //   _shadowPlaneGO.SetActive(false);
+        //
+        // }
+        // else if(CurrentPlaneState == PlaneState.ShadowPlane)
+        // {
+        //     _shadowPlaneGO.SetActive(true);
+        //     _materialPlaneGO.SetActive(false);   
+        //
+        // }
         
         
         HUD.Instance.PlayerStatsGUI.ChangePlaneUI(planeState);
