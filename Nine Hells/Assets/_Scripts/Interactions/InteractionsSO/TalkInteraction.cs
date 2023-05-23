@@ -11,18 +11,12 @@ namespace _Scripts.Interactions.InteractionsSO
         public UnityEvent unityEvent;
 
         [TextArea]
-        public List<string> dialogues = new();
+        [SerializeField] private string charName = "";
+        [SerializeField] private List<string> dialogues = new();
 
         public void OnAwake()
         {
             InteractionType = InteractionType.Talk;
-        }
-
-        public override void Interact()
-        {
-            base.Interact();
-            
-            if(unityEvent!=null)unityEvent.Invoke();
         }
 
         public override void Run()
@@ -30,6 +24,8 @@ namespace _Scripts.Interactions.InteractionsSO
             base.Run();
 
             if (unityEvent != null) unityEvent.Invoke();
+            Debug.Log("Typing");
+            TextRendererManager.instance.ShowNewDialogue(dialogues, charName);
         }
     }
 }
