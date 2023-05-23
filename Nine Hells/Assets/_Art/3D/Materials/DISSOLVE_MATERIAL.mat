@@ -26,7 +26,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_FC39119A:
-        m_Texture: {fileID: 2800000, guid: 3042b019b052942a1baf7aa49d7ca6bb, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6ac2c721b5fd66e4b88799e32b53ae47, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -95,7 +95,7 @@ Material:
     - Vector1_1D84F9A2: 0.3
     - Vector1_31CDA308: 0.178
     - Vector1_588C7CCF: 0.295
-    - Vector1_6A1B8813: 0
+    - Vector1_6A1B8813: 0.065
     - Vector1_8500AF78: 0.85
     - Vector1_8DAC8216: 10
     - Vector1_994C6DF6: 0.1
@@ -111,7 +111,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _DisAmount: 0.06
+    - _DisAmount: -2
     - _Dissolve_Value: 0.39
     - _DstBlend: 0
     - _Edge_Width: 0.1
