@@ -50,14 +50,14 @@ public class PlaneObject : MonoBehaviour
     
     private void SwitchToShadowPlane()
     {
-        StartCoroutine(SwitchToHide(_materialGO, _dissolveShadowPlaneMat, -2));
+        StartCoroutine(SwitchToHide(_materialGO, _dissolveShadowPlaneMat, -1.4f));
         StartCoroutine(SwitchToShow(_shadowGO, _dissolveMaterialPlaneMat, 2, SwitchPlaneManager.PlaneState.ShadowPlane));
 
     }
 
     private void SwitchToMaterialPlane()
     {
-        StartCoroutine(SwitchToHide(_shadowGO, _dissolveShadowPlaneMat, -2));
+        StartCoroutine(SwitchToHide(_shadowGO, _dissolveShadowPlaneMat, -2f));
         StartCoroutine(SwitchToShow(_materialGO, _dissolveMaterialPlaneMat, 2, SwitchPlaneManager.PlaneState.MaterialPlane));
     }
 
@@ -65,70 +65,66 @@ public class PlaneObject : MonoBehaviour
     {
         SwitchPlaneManager.CurrentPlaneState = SwitchPlaneManager.PlaneState.Switching;
 
-        dissolveMat.mainTexture = parent.MeshRenderer.material.mainTexture;
-        parent.MeshRenderer.material = dissolveMat;
+        parent.SetMaterial(dissolveMat);
 
         foreach (var ch in parent.Childs)
         {
-            ch.MeshRenderer.material = dissolveMat;
+            ch.SetMaterials(dissolveMat);
         }
 
         dissolveMat.SetFloat("_DisAmount", startValue);
 
         while (startValue <= 2)
         {
-            startValue += 0.1f;
+            startValue += 0.01f;
             dissolveMat.SetFloat("_DisAmount", startValue);
             yield return new WaitForSeconds(_delay);
         }
 
+        dissolveMat.SetFloat("_DisAmount", -2);
+
         parent.ResetMaterial();
-        parent.gameObject.SetActive(false);
         
         foreach (var ch in parent.Childs)
         {
-            ch.ResetMaterial();
+            ch.ResetMaterials();
             ch.gameObject.SetActive(false);
         }
-
-
-        yield return new WaitForSeconds(0.4f);
+        parent.gameObject.SetActive(false);
         
     }
 
     private IEnumerator SwitchToShow(PlaneObjectParent parent, Material dissolveMat, float startValue, SwitchPlaneManager.PlaneState state)
     {
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(2f);
 
-        parent.MeshRenderer.material = dissolveMat;
+        dissolveMat.SetFloat("_DisAmount", startValue);
+
+        parent.gameObject.SetActive(true);
+        parent.SetMaterial(dissolveMat);
 
         foreach (var ch in parent.Childs)
         {
-            ch.MeshRenderer.material = dissolveMat;
             ch.gameObject.SetActive(true);
+            ch.SetMaterials(dissolveMat);
         }
 
-        parent.gameObject.SetActive(true);
-        
-        dissolveMat.SetFloat("_DisAmount", startValue);
-        
         while (startValue >= -2)
         {
-            startValue -= 0.1f;
+            startValue -= 0.01f;
             dissolveMat.SetFloat("_DisAmount", startValue);
             yield return new WaitForSeconds(_delay);
         }
         
+
         parent.ResetMaterial();
-        // parent.gameObject.SetActive(false);
         
         foreach (var ch in parent.Childs)
         {
-            ch.ResetMaterial();
-            // ch.gameObject.SetActive(false);
+            ch.ResetMaterials();
         }
 
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(0.2f);
         SwitchPlaneManager.CurrentPlaneState = state;
 
     }

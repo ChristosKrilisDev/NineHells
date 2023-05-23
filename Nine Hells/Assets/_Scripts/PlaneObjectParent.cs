@@ -4,20 +4,50 @@ namespace _Scripts
 {
     public class PlaneObjectParent : MonoBehaviour
     {
-        [HideInInspector]public Material MyMaterial;
+        public List<Material> MyMaterial;
         [HideInInspector]public MeshRenderer MeshRenderer;
         public List<PlaneObjectChild> Childs;
 
         private void Awake()
         {
             MeshRenderer = GetComponent<MeshRenderer>();
-            MyMaterial = MeshRenderer.material;
+            MyMaterial = new List<Material>();
+
+            var mats = MeshRenderer.materials;
+
+            for (int i = 0; i < mats.Length; i++)
+            {
+                MyMaterial.Add(mats[i]);
+            }
+            ResetMaterial();
+        }
+
+        
+        
+        public void ResetMaterial()
+        {
+            MeshRenderer.materials = MyMaterial.ToArray();
+
+            // var mats = MeshRenderer.materials;
+            //
+            // for (int i = 0; i < MyMaterial.Count; i++)
+            // {
+            //     MeshRenderer.materials[i] = MyMaterial[i];
+            // }
         }
 
 
-        public void ResetMaterial()
+        public void SetMaterial(Material material)
         {
-            MeshRenderer.material = MyMaterial;
+            Material[] newMats = new Material[MeshRenderer.materials.Length];
+
+            for (int i = 0; i < newMats.Length; i++)
+            {
+                newMats[i] = material;
+            }
+
+            MeshRenderer.materials = newMats;
+        
         }
     }
 }

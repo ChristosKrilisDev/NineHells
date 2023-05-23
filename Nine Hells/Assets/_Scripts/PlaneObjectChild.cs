@@ -1,19 +1,50 @@
 
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlaneObjectChild : MonoBehaviour
 {
-    [HideInInspector]public Material MyMaterial;
+    public List<Material> MyMaterial;
     [HideInInspector]public MeshRenderer MeshRenderer;
 
+    private MeshRenderer mr;
+    
     private void Awake()
     {
         MeshRenderer = GetComponent<MeshRenderer>();
-        MyMaterial = MeshRenderer.material;
+        mr = MeshRenderer;
+        MyMaterial = new List<Material>();
+        var mats = MeshRenderer.materials;
+        for (int i = 0; i < mats.Length; i++)
+        {
+            MyMaterial.Add(mats[i]);
+        }
+
+        ResetMaterials();
     }
     
-    public void ResetMaterial()
+    public void ResetMaterials()
     {
-        MeshRenderer.material = MyMaterial;
+        // MeshRenderer = mr;
+        MeshRenderer.materials = MyMaterial.ToArray();
+        // for (int i = 0; i < MyMaterial.Count; i++)
+        // {
+        //     MeshRenderer.materials[i] = MyMaterial[i];
+        // }
+    }
+
+
+    public void SetMaterials(Material material)
+    {
+        Material[] newMats = new Material[MeshRenderer.materials.Length];
+
+        for (int i = 0; i < newMats.Length; i++)
+        {
+            newMats[i] = material;
+            Debug.Log("material "+ material.name);
+        }
+
+        MeshRenderer.materials = newMats;
+        
     }
 }
