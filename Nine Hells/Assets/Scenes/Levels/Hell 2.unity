@@ -133,12 +133,12 @@ PrefabInstance:
     - target: {fileID: 3628006257449458366, guid: 91494ea3206f73e43a402f11cc2c22bc,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -5.6560096e-18
+      value: 4.327772e-16
       objectReference: {fileID: 0}
     - target: {fileID: 3628006257449458366, guid: 91494ea3206f73e43a402f11cc2c22bc,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 1.0946657e-17
+      value: 2.1893312e-17
       objectReference: {fileID: 0}
     - target: {fileID: 4883367770108840309, guid: 91494ea3206f73e43a402f11cc2c22bc,
         type: 3}
@@ -203,12 +203,12 @@ PrefabInstance:
     - target: {fileID: 4883367771549423150, guid: 91494ea3206f73e43a402f11cc2c22bc,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -5.6560096e-18
+      value: 4.327772e-16
       objectReference: {fileID: 0}
     - target: {fileID: 4883367771549423150, guid: 91494ea3206f73e43a402f11cc2c22bc,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 1.0946657e-17
+      value: 2.1893312e-17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91494ea3206f73e43a402f11cc2c22bc, type: 3}
@@ -8027,18 +8027,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5826916634916475716}
   m_Mesh: {fileID: -462227558738862798, guid: 90396463430b9bf41927a18ffea71ac7, type: 3}
---- !u!114 &1286238284258806875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8773943463236378664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020893e9deed3b24fb28072c74bb6621, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1305037035277738828
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19621,7 +19609,6 @@ GameObject:
   - component: {fileID: 8773943463236378671}
   - component: {fileID: 8773943463236378707}
   - component: {fileID: 1221268599}
-  - component: {fileID: 1286238284258806875}
   m_Layer: 6
   m_Name: NPC
   m_TagString: NPC

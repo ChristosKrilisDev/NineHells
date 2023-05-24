@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1420578806848250158}
   - component: {fileID: 6365647709793690552}
   - component: {fileID: 8582594471422268395}
+  - component: {fileID: 9055432257028803951}
   m_Layer: 0
   m_Name: 1
   m_TagString: Untagged
@@ -132,6 +133,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &9055432257028803951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889008714801031593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 020893e9deed3b24fb28072c74bb6621, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1053868288560962792
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,6 +242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &1308154300787971378
 GameObject:
@@ -327,6 +341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &1420823325927413991
 GameObject:
@@ -427,6 +442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &1562837427865184960
 GameObject:
@@ -562,6 +578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &1702753032326242468
 GameObject:
@@ -661,6 +678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &1933827249276464618
 GameObject:
@@ -796,6 +814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &2583743384265106942
 GameObject:
@@ -894,6 +913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &2858450247387325095
 GameObject:
@@ -992,6 +1012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &3210823809798306752
 GameObject:
@@ -1090,6 +1111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &3252310408824291519
 GameObject:
@@ -1225,6 +1247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &3576024799847005536
 GameObject:
@@ -1323,6 +1346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &3849011879745360963
 GameObject:
@@ -1421,6 +1445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &4118588444567869221
 GameObject:
@@ -1434,9 +1459,11 @@ GameObject:
   - component: {fileID: 2353937319207776394}
   - component: {fileID: 2156766513404379864}
   - component: {fileID: 8096805229087203732}
+  - component: {fileID: 4116755614915993091}
+  - component: {fileID: 130574208004131911}
   m_Layer: 0
   m_Name: 1 (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1554,6 +1581,34 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &4116755614915993091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4118588444567869221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b145e9adf3704544abb8a37a1b481b45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hp: 1
+  materialNPC: {fileID: 889008714801031593}
+  Animator: {fileID: 8096805229087203732}
+--- !u!65 &130574208004131911
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4118588444567869221}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.110904, y: 3.6896212, z: 2.8607945}
+  m_Center: {x: 0, y: 0, z: -0}
 --- !u!1 &4656345753054624962
 GameObject:
   m_ObjectHideFlags: 0
@@ -1651,6 +1706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &5041583740092927946
 GameObject:
@@ -1749,6 +1805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &5198041920161338740
 GameObject:
@@ -1847,6 +1904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &5384241930501786434
 GameObject:
@@ -1945,6 +2003,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &5438952467715970302
 GameObject:
@@ -2043,6 +2102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &5666331699620180408
 GameObject:
@@ -2141,6 +2201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &5670225275787743123
 GameObject:
@@ -2239,6 +2300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &5816630290571217751
 GameObject:
@@ -2374,6 +2436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &5988050413626783172
 GameObject:
@@ -2421,6 +2484,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TypeObject: 0
+  rType: 0
+  UseReflect: 0
   _materialGO: {fileID: 1420578806848250158}
   _shadowGO: {fileID: 2353937319207776394}
 --- !u!1 &6010506072216648281
@@ -2520,6 +2586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &6317426882166891253
 GameObject:
@@ -2618,6 +2685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &6358308739170541886
 GameObject:
@@ -2753,6 +2821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &6623758799219078550
 GameObject:
@@ -2887,6 +2956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &7121595952419388358
 GameObject:
@@ -2985,6 +3055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &7422545961009100685
 GameObject:
@@ -3083,6 +3154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &7431778408732102135
 GameObject:
@@ -3181,6 +3253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &7505640918335603024
 GameObject:
@@ -3279,6 +3352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &7509846028358345009
 GameObject:
@@ -3409,6 +3483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &7801751990930282037
 GameObject:
@@ -3507,6 +3582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &7846357424042034607
 GameObject:
@@ -3605,6 +3681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &7995145891454751089
 GameObject:
@@ -3703,6 +3780,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &8327650407352227809
 GameObject:
@@ -3801,6 +3879,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &8463226353937272608
 GameObject:
@@ -3899,6 +3978,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &8845229540671015820
 GameObject:

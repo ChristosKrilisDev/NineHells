@@ -21,6 +21,7 @@ public class PlaneObject : MonoBehaviour
     {
         General,
         Ladder,
+        NPC,
     }
 
     public ReflectType rType = ReflectType.General;

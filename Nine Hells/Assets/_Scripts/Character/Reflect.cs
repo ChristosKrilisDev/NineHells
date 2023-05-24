@@ -1,4 +1,5 @@
 using _Scripts.Interactions.InteractionsSO;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 namespace _Scripts.Character
 {
@@ -18,6 +19,18 @@ namespace _Scripts.Character
                 var prev = prevGo.GetComponent<UseInteraction>();
                 newG.CanInteract = prev.CanInteract;
                 newG.gameObject.tag = prev.gameObject.tag;
+            }
+
+            if (reflectType == PlaneObject.ReflectType.NPC)
+            {
+                // var prevAnim =prevGo.GetComponent<Animator>()
+                
+                for (int i = 0; i < newGO.transform.childCount; i++)
+                {
+                    newGO.transform.GetChild(i).transform.localPosition = prevGo.transform.GetChild(i).transform.localPosition;
+                    newGO.transform.GetChild(i).transform.localRotation = prevGo.transform.GetChild(i).transform.localRotation;
+                }
+                
             }
         }
     }
