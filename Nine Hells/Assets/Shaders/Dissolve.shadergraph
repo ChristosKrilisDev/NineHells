@@ -1807,17 +1807,17 @@
     "m_Type": "UnityEditor.ShaderGraph.RemapNode",
     "m_ObjectId": "7c541b85bf414d3ea46471e963fcfde7",
     "m_Group": {
-        "m_Id": ""
+        "m_Id": "6438cd01ca3c4903b8fb217b0d75f911"
     },
     "m_Name": "Remap",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1662.9998779296875,
-            "y": -4.9999589920043949,
+            "x": -1669.0,
+            "y": 212.0,
             "width": 208.0,
-            "height": 325.99993896484377
+            "height": 326.00006103515627
         }
     },
     "m_Slots": [
