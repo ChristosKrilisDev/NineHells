@@ -5,21 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Nine Hells/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Nine Hells/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Hell_Sample 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Hell_Sample 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Hell 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Hell 2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Art/3D/Materials/DISSOLVE_MATERIAL.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Art/3D/Materials/DISSOLVE_MATERIAL.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Art/3D/Materials/DISSOLVE_SHADOW.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Art/3D/Materials/DISSOLVE_SHADOW.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Art/3D/Materials/SIMPLE_DISSOLVE.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Art/3D/Materials/SIMPLE_DISSOLVE.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Art/3D/Materials/SIMPLE_DISSOLVE_MaterialPlane.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Art/3D/Materials/SIMPLE_DISSOLVE_MaterialPlane.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Final/Barrel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Final/Barrel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Final/Bridgh.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Final/Bridgh.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Final/Ladder.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Final/Ladder.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Final/Tree.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Final/Tree.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Final/WoordenPlatform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Final/WoordenPlatform.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Levels/Templete.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Levels/Templete.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/UI/HUD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/UI/HUD.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Character/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Character/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Character/PlayerInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Character/PlayerInteraction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/TextRendererManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/TextRendererManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/ladder_interactable.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/ladder_interactable.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionsSO/UseInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionsSO/UseInteraction.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +84,7 @@
       <workItem from="1684766305039" duration="4226000" />
       <workItem from="1684843408408" duration="7165000" />
       <workItem from="1684864605482" duration="5550000" />
+      <workItem from="1684880810750" duration="1250000" />
     </task>
     <servers />
   </component>
