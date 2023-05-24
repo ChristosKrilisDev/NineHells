@@ -1,5 +1,5 @@
+using _Scripts.Interactions;
 using _Scripts.Interactions.InteractionsSO;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 namespace _Scripts.Character
 {
@@ -25,9 +25,10 @@ namespace _Scripts.Character
             {
                 // var prevAnim =prevGo.GetComponent<Animator>()
 
-                var npc = newGO.GetComponent<NPC>();
-                npc.enabled = false;
-                newGO.transform.GetComponent<Collider>().enabled = false;
+                // var npc = newGO.GetComponent<NPC>();
+                // newGO.GetComponent<InteractionObject>().enabled = false;
+                // npc.enabled = false;
+                newGO.transform.GetComponent<BoxCollider>().enabled = false;
 
             }
         }

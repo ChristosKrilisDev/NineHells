@@ -27,6 +27,7 @@ namespace _Scripts
                 //die
                 // Destroy(gameObject);
                 Animator.SetBool("die",true);
+                
 
                 if (materialNPC.TryGetComponent(out Animator animator))
                 {
@@ -37,6 +38,7 @@ namespace _Scripts
                     }
 
                     materialNPC.gameObject.SetActive(true);
+                    materialNPC.transform.GetComponent<BoxCollider>().enabled = false;
                     animator.SetBool("isDead",true);
 
                     for (int i = 0; i < materialNPC.transform.childCount; i++)
