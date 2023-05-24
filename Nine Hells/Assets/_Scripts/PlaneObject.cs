@@ -109,7 +109,7 @@ public class PlaneObject : MonoBehaviour
             ch.SetMaterials(dissolveMat);
         }
 
-        while (startValue >= 0)
+        while (startValue >= 0.25f)
         {
             startValue -= 0.01f;
             dissolveMat.SetFloat("_DisAmount", startValue);
