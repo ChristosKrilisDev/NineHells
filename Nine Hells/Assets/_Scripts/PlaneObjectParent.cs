@@ -44,6 +44,7 @@ namespace _Scripts
             for (int i = 0; i < newMats.Length; i++)
             {
                 newMats[i] = material;
+                
             }
 
             MeshRenderer.materials = newMats;
