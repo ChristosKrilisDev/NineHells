@@ -54,7 +54,7 @@ namespace _Scripts.Interactions.InteractionsSO
                 return;
             }
             
-            if (Input.GetKeyDown(KeyCode.Q))
+            if (Input.GetKey(KeyCode.F))
             {
                 AttackDelay = 0;
 

@@ -52,22 +52,24 @@ public class SwitchPlaneManager : MonoBehaviour
     {
         if(CurrentPlaneState == PlaneState.Switching) return;
         
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            CombatController.enabled = true;
-            CombatController.ActivateWeapon();
-            CombatController.Animator = ShadowAnimator;
-            SwitchPlane(PlaneState.ShadowPlane);
+            if (CurrentPlaneState == PlaneState.MaterialPlane)
+            {
+                CombatController.enabled = true;
+                CombatController.ActivateWeapon();
+                CombatController.Animator = ShadowAnimator;
+                SwitchPlane(PlaneState.ShadowPlane);
+            }
+            else
+            {
+                CombatController.enabled = false;
+                CombatController.HideWeapon();
+                CombatController.Animator = MaterialAnimator;
+                SwitchPlane(PlaneState.MaterialPlane);
+            }
         }
-        
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            CombatController.enabled = false;
-            CombatController.HideWeapon();
-            CombatController.Animator = MaterialAnimator;
-            SwitchPlane(PlaneState.MaterialPlane);
 
-        }
     }
 
     public void SwitchPlane(PlaneState planeState)
