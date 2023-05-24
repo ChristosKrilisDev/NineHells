@@ -8,6 +8,7 @@ TagManager:
   - Ladder
   - NPC
   - Enemy
+  - Bucket
   layers:
   - Default
   - TransparentFX

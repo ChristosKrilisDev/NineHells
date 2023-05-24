@@ -13,7 +13,7 @@ public class Hell3 : MonoBehaviour
     {
         //Rotate(30);
         //Perfect Balance at 50kg, lw: 65kg, mw: 85kg, hw: 100kg
-        BalanceScale(85);
+        //BalanceScale(50);
     }
 
     public void Rotate(float angle)
