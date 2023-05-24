@@ -24,6 +24,7 @@ namespace _Scripts
 
             if (_hp <= 0)
             {
+                Hell2.IncreaseKilledEnemies();
                 //die
                 // Destroy(gameObject);
                 Animator.SetBool("die",true);
