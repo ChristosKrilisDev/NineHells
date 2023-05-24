@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Cinemachine;
 using DG.Tweening;
 using TMPro;
@@ -13,10 +14,11 @@ namespace _Scripts.Interactions.InteractionsSO
     public class UseInteraction : Interaction
     {
 
-        public MyEvent unityEvent;
+        public UnityEvent<List<Transform>> UnityEvent;
 
-        [SerializeField] private Transform _initialPos;
-        [SerializeField] private Transform _placementTransform;
+        [SerializeField] private List<Transform> _transforms;
+        // [SerializeField] private Transform _initialPos;
+        // [SerializeField] private Transform _placementTransform;
         [TagField, SerializeField] private string _tagKey;
 
         private void Start()
@@ -36,15 +38,15 @@ namespace _Scripts.Interactions.InteractionsSO
             //});
             //transform.DOLocalRotate(_placementTransform.transform.eulerAngles, 0.4f);
 
-            if(unityEvent != null) unityEvent.Invoke(new Transform[] { transform, _initialPos, _placementTransform });
+            if(UnityEvent != null) UnityEvent.Invoke(_transforms);
         }
 
         public override void ResetData()
         {
             base.ResetData();
 
-            transform.localPosition = _initialPos.transform.localPosition;
-            transform.localRotation = _initialPos.transform.localRotation;
+            transform.localPosition = _transforms[0].transform.localPosition;
+            transform.localRotation = _transforms[0].transform.localRotation;
 
         }
 

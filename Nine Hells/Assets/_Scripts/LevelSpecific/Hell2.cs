@@ -14,7 +14,7 @@ public class Hell2 : MonoBehaviour
         portal.transform.position = player.transform.position - Vector3.right * 2f;
     }
 
-    public void RaiseLadder(Transform[] args)
+    public void RaiseLadder(List<Transform> args)
     {
         args[0].GetComponent<BoxCollider>().enabled = false;
         args[0].DOLocalMove(args[1].localPosition, 0.4f).OnComplete(() =>
@@ -23,4 +23,5 @@ public class Hell2 : MonoBehaviour
         });
         args[0].DOLocalRotate(args[1].transform.eulerAngles, 0.4f);
     }
+    
 }
