@@ -69,11 +69,12 @@ public class PlaneObject : MonoBehaviour
 
         foreach (var ch in parent.Childs)
         {
+            
             ch.SetMaterials(dissolveMat);
         }
 
         dissolveMat.SetFloat("_DisAmount", startValue);
-
+        
         while (startValue <= 1)
         {
             startValue += 0.01f;

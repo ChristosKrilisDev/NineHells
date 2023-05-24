@@ -20,6 +20,7 @@ public class PlaneObjectChild : MonoBehaviour
             MyMaterial.Add(mats[i]);
         }
 
+        
         ResetMaterials();
     }
     
@@ -41,6 +42,7 @@ public class PlaneObjectChild : MonoBehaviour
         for (int i = 0; i < newMats.Length; i++)
         {
             newMats[i] = material;
+            newMats[i].SetColor("_ModelColor", MyMaterial[i].color);
         }
 
         MeshRenderer.materials = newMats;
