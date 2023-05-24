@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using _Scripts;
+using _Scripts.Character;
+using DG.Tweening;
 using UnityEngine;
 
 public class PlaneObject : MonoBehaviour
@@ -15,10 +17,16 @@ public class PlaneObject : MonoBehaviour
     }
 
     public PlaneTypeObject TypeObject = PlaneTypeObject.Both;
-    public bool Skip = false;
-    public bool UseReflect = false;
-    public Transform ReflectTransform;
+    public enum ReflectType
+    {
+        General,
+        Ladder,
+    }
 
+    public ReflectType rType = ReflectType.General;
+    public bool UseReflect = false;
+
+    [Space]
     [Space]
     [SerializeField] private PlaneObjectParent _materialGO;
     [SerializeField] private PlaneObjectParent _shadowGO;
@@ -27,7 +35,6 @@ public class PlaneObject : MonoBehaviour
     private Material _dissolveShadowPlaneMat;
 
     private float _delay = 0.009f;
-    
 
     private void Start()
     {
@@ -80,6 +87,11 @@ public class PlaneObject : MonoBehaviour
         }
         else
         {
+            if (UseReflect)
+            {
+                Reflect.UseReflect(_shadowGO.gameObject, _materialGO.gameObject, rType);
+
+            }
             StartCoroutine(SwitchToHide(_materialGO, _dissolveShadowPlaneMat, 0f));
             StartCoroutine(SwitchToShow(_shadowGO, _dissolveMaterialPlaneMat, 1, SwitchPlaneManager.PlaneState.ShadowPlane));
         }
@@ -98,6 +110,11 @@ public class PlaneObject : MonoBehaviour
         }
         else
         {
+            if (UseReflect)
+            {
+                Reflect.UseReflect(_materialGO.gameObject, _shadowGO.gameObject, rType);
+            }
+
             StartCoroutine(SwitchToHide(_shadowGO, _dissolveShadowPlaneMat, 0f));
             StartCoroutine(SwitchToShow(_materialGO, _dissolveMaterialPlaneMat, 1, SwitchPlaneManager.PlaneState.MaterialPlane));
         }
