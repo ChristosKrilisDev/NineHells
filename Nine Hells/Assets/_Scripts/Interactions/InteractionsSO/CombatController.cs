@@ -1,4 +1,5 @@
 using System;
+using DG.Tweening;
 using UnityEngine;
 
 namespace _Scripts.Interactions.InteractionsSO
@@ -8,11 +9,48 @@ namespace _Scripts.Interactions.InteractionsSO
         public float RaycastDistance = 10f;
 
         public Animator Animator;
+
+        public GameObject Sword;
+        public Vector3 SwordScale;
+        
+        
+        private void Start()
+        {
+            SwordScale = Sword.transform.localScale;
+            HideWeapon();
+        }
+
+        public void ActivateWeapon()
+        {
+            Sword.SetActive(true);
+            Sword.transform.DOKill();
+            Sword.transform.DOScale(SwordScale,0.8f);
+            // Sword.SwitchPlane(SwitchPlaneManager.PlaneState.ShadowPlane);
+        }
+
+        public void HideWeapon()
+        {
+            Sword.transform.DOKill();
+            Sword.transform.DOScale(Vector3.zero,0.8f).OnComplete(() =>
+            {
+                Sword.SetActive(false);
+
+            });
+
+            // Sword.SwitchPlane(SwitchPlaneManager.PlaneState.MaterialPlane);
+        }
         
         private void Update()
         {
+
+            if(SwitchPlaneManager.CurrentPlaneState != SwitchPlaneManager.PlaneState.ShadowPlane)
+                return;
+            
             if (Input.GetKeyDown(KeyCode.Q))
             {
+
+                Sword.gameObject.SetActive(true);
+                
                 //delay
                 Animator.SetTrigger("attack");
                 

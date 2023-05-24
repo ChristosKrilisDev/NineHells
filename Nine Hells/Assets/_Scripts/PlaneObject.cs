@@ -6,7 +6,19 @@ using UnityEngine;
 
 public class PlaneObject : MonoBehaviour
 {
-    
+
+    public enum PlaneTypeObject
+    {
+        Both,
+        Material,
+        Shadow
+    }
+
+    public PlaneTypeObject TypeObject = PlaneTypeObject.Both;
+    public bool Skip = false;
+    public bool UseReflect = false;
+    public Transform ReflectTransform;
+
     [Space]
     [SerializeField] private PlaneObjectParent _materialGO;
     [SerializeField] private PlaneObjectParent _shadowGO;
@@ -15,10 +27,16 @@ public class PlaneObject : MonoBehaviour
     private Material _dissolveShadowPlaneMat;
 
     private float _delay = 0.009f;
+    
 
-    private void Awake()
+    private void Start()
     {
         _shadowGO.gameObject.SetActive(false);
+
+        if (TypeObject == PlaneTypeObject.Shadow)
+        {
+            _materialGO.gameObject.SetActive(false);
+        }
     }
 
     public void Init(Material dissolveMaterialPlaneMat, Material dissolveShadowPlaneMat)
@@ -47,18 +65,43 @@ public class PlaneObject : MonoBehaviour
                 throw new ArgumentOutOfRangeException(nameof(planeState), planeState, null);
         }
     }
-    
+
     private void SwitchToShadowPlane()
     {
-        StartCoroutine(SwitchToHide(_materialGO, _dissolveShadowPlaneMat, 0f));
-        StartCoroutine(SwitchToShow(_shadowGO, _dissolveMaterialPlaneMat, 1, SwitchPlaneManager.PlaneState.ShadowPlane));
+        if (TypeObject == PlaneTypeObject.Material)
+        {
+            StartCoroutine(SwitchToHide(_materialGO, _dissolveShadowPlaneMat, 0f));
+
+        }
+        else if (TypeObject == PlaneTypeObject.Shadow)
+        {
+            StartCoroutine(SwitchToShow(_shadowGO, _dissolveMaterialPlaneMat, 1, SwitchPlaneManager.PlaneState.ShadowPlane));
+
+        }
+        else
+        {
+            StartCoroutine(SwitchToHide(_materialGO, _dissolveShadowPlaneMat, 0f));
+            StartCoroutine(SwitchToShow(_shadowGO, _dissolveMaterialPlaneMat, 1, SwitchPlaneManager.PlaneState.ShadowPlane));
+        }
 
     }
 
     private void SwitchToMaterialPlane()
     {
-        StartCoroutine(SwitchToHide(_shadowGO, _dissolveShadowPlaneMat, 0f));
-        StartCoroutine(SwitchToShow(_materialGO, _dissolveMaterialPlaneMat, 1, SwitchPlaneManager.PlaneState.MaterialPlane));
+        if (TypeObject == PlaneTypeObject.Material)
+        {
+            StartCoroutine(SwitchToShow(_materialGO, _dissolveMaterialPlaneMat, 1, SwitchPlaneManager.PlaneState.MaterialPlane));
+        }
+        else if (TypeObject == PlaneTypeObject.Shadow)
+        {
+            StartCoroutine(SwitchToHide(_shadowGO, _dissolveShadowPlaneMat, 0f));
+        }
+        else
+        {
+            StartCoroutine(SwitchToHide(_shadowGO, _dissolveShadowPlaneMat, 0f));
+            StartCoroutine(SwitchToShow(_materialGO, _dissolveMaterialPlaneMat, 1, SwitchPlaneManager.PlaneState.MaterialPlane));
+        }
+
     }
 
     private IEnumerator SwitchToHide(PlaneObjectParent parent, Material dissolveMat, float startValue)
@@ -69,30 +112,31 @@ public class PlaneObject : MonoBehaviour
 
         foreach (var ch in parent.Childs)
         {
-            
+
             ch.SetMaterials(dissolveMat);
         }
 
         dissolveMat.SetFloat("_DisAmount", startValue);
-        
+
         while (startValue <= 1)
         {
             startValue += 0.01f;
             dissolveMat.SetFloat("_DisAmount", startValue);
+
             yield return new WaitForSeconds(_delay);
         }
 
         dissolveMat.SetFloat("_DisAmount", 0);
 
         parent.ResetMaterial();
-        
+
         foreach (var ch in parent.Childs)
         {
             ch.ResetMaterials();
             ch.gameObject.SetActive(false);
         }
         parent.gameObject.SetActive(false);
-        
+
     }
 
     private IEnumerator SwitchToShow(PlaneObjectParent parent, Material dissolveMat, float startValue, SwitchPlaneManager.PlaneState state)
@@ -114,12 +158,12 @@ public class PlaneObject : MonoBehaviour
         {
             startValue -= 0.01f;
             dissolveMat.SetFloat("_DisAmount", startValue);
+
             yield return new WaitForSeconds(_delay);
         }
-        
 
         parent.ResetMaterial();
-        
+
         foreach (var ch in parent.Childs)
         {
             ch.ResetMaterials();
@@ -129,6 +173,5 @@ public class PlaneObject : MonoBehaviour
         SwitchPlaneManager.CurrentPlaneState = state;
 
     }
-    
 
 }

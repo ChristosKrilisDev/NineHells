@@ -1,4 +1,5 @@
 
+using _Scripts.Interactions.InteractionsSO;
 using UnityEngine;
 
 
@@ -26,6 +27,10 @@ public class SwitchPlaneManager : MonoBehaviour
     // private List<PlaneObject> _materialPlaneGOs;
     // private List<PlaneObject> _shadowPlaneGOs;
 
+    public CombatController CombatController;
+    public Animator MaterialAnimator;
+    public Animator ShadowAnimator;
+
     private void Awake()
     {
         _planeObjects = FindObjectsOfType<PlaneObject>();
@@ -35,29 +40,7 @@ public class SwitchPlaneManager : MonoBehaviour
             plane.Init(_dissolveMaterialPlaneMat, _dissolveShadowPlaneMat);
         }
 
-        // _materialPlaneGOs = new List<PlaneObject>();
-        // for (int i = 0; i < _materialPlaneGO.transform.childCount; i++)
-        // {
-        //     var child = _materialPlaneGO.transform.GetChild(i);
-        //
-        //     if (child.transform.TryGetComponent(out PlaneObject pobj))
-        //     {
-        //         pobj.Init(_dissolveMaterialPlaneMat, _dissolveShadowPlaneMat);
-        //         _materialPlaneGOs.Add(pobj);
-        //     }
-        // }
-        //
-        // _shadowPlaneGOs = new List<PlaneObject>();
-        // for (int i = 0; i < _shadowPlaneGO.transform.childCount; i++)
-        // {
-        //     var child = _shadowPlaneGO.transform.GetChild(i);
-        //     
-        //     if (child.transform.TryGetComponent(out PlaneObject pobj))
-        //     {
-        //         pobj.Init(_dissolveMaterialPlaneMat, _dissolveShadowPlaneMat);
-        //         _shadowPlaneGOs.Add(pobj);
-        //     }
-        // }
+
         CurrentPlaneState = PlaneState.MaterialPlane;
         SwitchPlane(CurrentPlaneState);
     }
@@ -71,12 +54,19 @@ public class SwitchPlaneManager : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.F))
         {
+            CombatController.enabled = true;
+            CombatController.ActivateWeapon();
+            CombatController.Animator = ShadowAnimator;
             SwitchPlane(PlaneState.ShadowPlane);
         }
         
         if (Input.GetKeyDown(KeyCode.G))
         {
+            CombatController.enabled = false;
+            CombatController.HideWeapon();
+            CombatController.Animator = MaterialAnimator;
             SwitchPlane(PlaneState.MaterialPlane);
+
         }
     }
 
@@ -85,19 +75,6 @@ public class SwitchPlaneManager : MonoBehaviour
         if(CurrentPlaneState == planeState) return;
 
         CurrentPlaneState = planeState;
-        //
-        // if (CurrentPlaneState == PlaneState.MaterialPlane)
-        // {
-        //   _materialPlaneGO.SetActive(true);   
-        //   _shadowPlaneGO.SetActive(false);
-        //
-        // }
-        // else if(CurrentPlaneState == PlaneState.ShadowPlane)
-        // {
-        //     _shadowPlaneGO.SetActive(true);
-        //     _materialPlaneGO.SetActive(false);   
-        //
-        // }
         
         
         HUD.Instance.PlayerStatsGUI.ChangePlaneUI(planeState);
@@ -108,36 +85,7 @@ public class SwitchPlaneManager : MonoBehaviour
             po.SwitchPlane(planeState);
         }
 
-
-
-        // if (planeState == PlaneState.MaterialPlane)
-        // {
-        //     foreach (var mgo in _materialPlaneGOs)
-        //     {
-        //         // mgo.gameObject.SetActive(true);
-        //         mgo.Show();
-        //     }
-        //
-        //     foreach (var sgo in _shadowPlaneGOs)
-        //     {
-        //         // sgo.gameObject.SetActive(false);
-        //         sgo.Hide();
-        //     }
-        // }
-        // else if (planeState == PlaneState.ShadowPlane)
-        // {
-        //     foreach (var mgo in _materialPlaneGOs)
-        //     {
-        //         // mgo.gameObject.SetActive(false);
-        //         mgo.Hide();
-        //     }
-        //
-        //     foreach (var sgo in _shadowPlaneGOs)
-        //     {
-        //         // sgo.gameObject.SetActive(true);
-        //         sgo.Show();
-        //     }
-        // }
+        
  
     }
 }
