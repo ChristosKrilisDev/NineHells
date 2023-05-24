@@ -7,7 +7,8 @@ namespace _Scripts.Character
     {
 
         private InteractionObject _focusedObj;
-
+        private bool _hasInteract = false;
+        
         void Update()
         {
             InputInteract(_focusedObj);
@@ -16,10 +17,19 @@ namespace _Scripts.Character
         private void InputInteract(InteractionObject interactable)
         {
             if(interactable == null) return;
+            if(_focusedObj == null) return;
+
+            if (_focusedObj == interactable && _hasInteract) return;
             
             if (Input.GetKeyDown(KeyCode.E))
             {
                 interactable.Interact();
+                _hasInteract = true;
+
+                if (interactable.Interaction.InteractionType == InteractionType.Talk)
+                {
+                    PlayerController.CanMove = false;
+                }
             }
         }
 
@@ -53,12 +63,16 @@ namespace _Scripts.Character
         private void OnCollisionExit(Collision other)
         {
             if (!other.gameObject.TryGetComponent<InteractionObject>(out var interactable)) return;
+            _focusedObj = null;
+            _hasInteract = false;
             interactable.Reset();
         }
 
         private void OnTriggerExit(Collider other)
         {
             if (!other.gameObject.TryGetComponent<InteractionObject>(out var interactable)) return;
+            _focusedObj = null;
+            _hasInteract = false;
             interactable.Reset();
         }
     }
