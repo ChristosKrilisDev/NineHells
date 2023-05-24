@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9278631-f436-40de-b250-ac2bd0a5f5cd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/LevelSpecific/Hell2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/LevelSpecific/Hell2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/PlaneObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/PlaneObject.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +86,7 @@
       <workItem from="1684843408408" duration="7165000" />
       <workItem from="1684864605482" duration="5550000" />
       <workItem from="1684880810750" duration="1867000" />
-      <workItem from="1684929646728" duration="14786000" />
+      <workItem from="1684929646728" duration="15119000" />
     </task>
     <servers />
   </component>
