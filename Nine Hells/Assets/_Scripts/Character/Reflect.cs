@@ -24,13 +24,11 @@ namespace _Scripts.Character
             if (reflectType == PlaneObject.ReflectType.NPC)
             {
                 // var prevAnim =prevGo.GetComponent<Animator>()
-                
-                for (int i = 0; i < newGO.transform.childCount; i++)
-                {
-                    newGO.transform.GetChild(i).transform.localPosition = prevGo.transform.GetChild(i).transform.localPosition;
-                    newGO.transform.GetChild(i).transform.localRotation = prevGo.transform.GetChild(i).transform.localRotation;
-                }
-                
+
+                var npc = newGO.GetComponent<NPC>();
+                npc.enabled = false;
+                newGO.transform.GetComponent<Collider>().enabled = false;
+
             }
         }
     }

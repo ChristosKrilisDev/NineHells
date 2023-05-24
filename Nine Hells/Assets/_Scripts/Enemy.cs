@@ -1,6 +1,7 @@
 using _Scripts.Character;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.UIElements;
 namespace _Scripts
 {
     public class Enemy : MonoBehaviour
@@ -37,7 +38,6 @@ namespace _Scripts
 
                     materialNPC.gameObject.SetActive(true);
                     animator.SetBool("isDead",true);
-                    materialNPC.gameObject.SetActive(false);
 
                     for (int i = 0; i < materialNPC.transform.childCount; i++)
                     {
@@ -50,8 +50,8 @@ namespace _Scripts
                 transform.DOLocalMoveX(0.01f, 1f).OnComplete(()=>
                 {
                     Animator.SetBool("isDead",true);
-
-                    // Reflect.UseReflect(materialNPC, this.gameObject, PlaneObject.ReflectType.General);
+                    transform.GetComponent<BoxCollider>().enabled = false;
+                    Reflect.UseReflect(materialNPC, this.gameObject, PlaneObject.ReflectType.General);
                 });
             }
         }
