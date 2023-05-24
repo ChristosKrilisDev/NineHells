@@ -6,11 +6,16 @@ namespace _Scripts.Interactions.InteractionsSO
     public class CombatController : MonoBehaviour
     {
         public float RaycastDistance = 10f;
+
+        public Animator Animator;
         
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.Q))
             {
+                //delay
+                Animator.SetTrigger("attack");
+                
                 RaycastHit hit;
 
                 if (!Physics.Raycast(transform.position, transform.right, out hit, RaycastDistance)) return;

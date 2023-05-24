@@ -5,9 +5,11 @@ using UnityEngine;
 public class PlaneObjectChild : MonoBehaviour
 {
     public List<Material> MyMaterial;
+    public bool UseColor = true;
     [HideInInspector]public MeshRenderer MeshRenderer;
 
     private MeshRenderer mr;
+    
     
     private void Awake()
     {
@@ -42,7 +44,11 @@ public class PlaneObjectChild : MonoBehaviour
         for (int i = 0; i < newMats.Length; i++)
         {
             newMats[i] = material;
-            newMats[i].SetColor("_ModelColor", MyMaterial[i].color);
+
+            if (UseColor)
+            {
+                newMats[i].SetColor("_ModelColor", MyMaterial[i].color);
+            }
         }
 
         MeshRenderer.materials = newMats;
