@@ -38,6 +38,7 @@ namespace _Scripts.Interactions
         public void Reset()
         {
             InteractionCanvas.gameObject.SetActive(false);
+            if (GetComponent<Interaction>().exitEvent != null) GetComponent<Interaction>().exitEvent.Invoke();
         }
     
     }

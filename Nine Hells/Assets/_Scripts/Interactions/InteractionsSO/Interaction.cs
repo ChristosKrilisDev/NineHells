@@ -1,10 +1,13 @@
 using UnityEngine;
+using UnityEngine.Events;
+
 namespace _Scripts.Interactions.InteractionsSO
 {
     public class Interaction: MonoBehaviour
     {
         public bool CanInteract = true;
         public InteractionType InteractionType;
+        public UnityEvent exitEvent;
 
         //public virtual void Interact()
         //{

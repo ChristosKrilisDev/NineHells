@@ -9,11 +9,23 @@ public class Hell3 : MonoBehaviour
     public GameObject chainTipLeft;
     public GameObject chainTipRight;
 
+    private float currentWeight = 0;
+
+    private Vector3 balanceScaleDefault;
+    private Vector3 chainTipLeftDefault;
+    private Vector3 chainTipRightDefault;
+
     private void Start()
     {
         //Rotate(30);
+        // 0kg, 15kg, 35kg
         //Perfect Balance at 50kg, lw: 65kg, mw: 85kg, hw: 100kg
         //BalanceScale(50);
+
+        balanceScaleDefault = balanceScale.transform.eulerAngles;
+        chainTipLeftDefault = chainTipLeft.transform.eulerAngles;
+        chainTipRightDefault = chainTipRight.transform.eulerAngles;
+
     }
 
     public void Rotate(float angle)
@@ -35,5 +47,32 @@ public class Hell3 : MonoBehaviour
 
         float targetAngle = (weight - minWeight) * (maxAngle - minAngle) / (maxWeight - minWeight) + minAngle;
         Rotate(targetAngle);
+    }
+
+    public void GainWeight()
+    {
+        currentWeight = currentWeight switch {
+            
+            0 => 15,
+            15=> 35,
+            35=> 50,
+            50=> 65,
+            65=> 85,
+            85=>100,
+            _ => 0
+        };
+    }
+
+    public void CheckWeight()
+    {
+        
+        BalanceScale(currentWeight);
+    }
+
+    public void Reset()
+    {
+        balanceScale.transform.eulerAngles = balanceScaleDefault;
+        chainTipLeft.transform.eulerAngles = chainTipLeftDefault;
+        chainTipRight.transform.eulerAngles= chainTipRightDefault;
     }
 }
