@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using _Scripts.Interactions.InteractionsSO;
 
 public class Hell3 : MonoBehaviour
 {
@@ -51,16 +52,19 @@ public class Hell3 : MonoBehaviour
 
     public void GainWeight()
     {
-        currentWeight = currentWeight switch {
-            
+        currentWeight = currentWeight switch
+        {
+
             0 => 15,
-            15=> 35,
-            35=> 50,
-            50=> 65,
-            65=> 85,
-            85=>100,
+            15 => 35,
+            35 => 50,
+            50 => 65,
+            65 => 85,
+            85 => 100,
             _ => 0
         };
+
+        Debug.Log($"Weight: {currentWeight}");
     }
 
     public void CheckWeight()
@@ -71,8 +75,14 @@ public class Hell3 : MonoBehaviour
 
     public void Reset()
     {
+        balanceScale.transform.DOKill();
+        chainTipLeft.transform.DOKill();
+        chainTipRight.transform.DOKill();
+
         balanceScale.transform.eulerAngles = balanceScaleDefault;
         chainTipLeft.transform.eulerAngles = chainTipLeftDefault;
         chainTipRight.transform.eulerAngles= chainTipRightDefault;
+
+        balanceScale.transform.parent.GetComponent<UseInteraction>().CanInteract = true;
     }
 }

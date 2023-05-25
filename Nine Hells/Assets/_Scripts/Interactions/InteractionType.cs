@@ -5,5 +5,6 @@ namespace _Scripts
         Talk = 01,
         Move = 02,
         Use= 03,
+        Eat=04,
     }
 }

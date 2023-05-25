@@ -19,7 +19,7 @@ namespace _Scripts.Character
         public static bool CanMove = true;
         private Rigidbody _rb;
 
-        private float previousMoveX = 0;
+        private float previousMoveX = 1;
         private bool rotating = false;
         private Vector3 previousAngles;
 

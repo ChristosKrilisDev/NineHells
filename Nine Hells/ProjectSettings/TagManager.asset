@@ -9,6 +9,8 @@ TagManager:
   - NPC
   - Enemy
   - Bucket
+  - BalanceScale
+  - Food
   layers:
   - Default
   - TransparentFX

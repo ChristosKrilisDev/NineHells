@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using _Scripts.Character;
 using Cinemachine;
 using UnityEngine;
 using UnityEngine.Events;
@@ -35,6 +36,18 @@ namespace _Scripts.Interactions.InteractionsSO
             //transform.DOLocalRotate(_placementTransform.transform.eulerAngles, 0.4f);
 
             if(UnityEvent != null) UnityEvent.Invoke(_transforms);
+            if (_tagKey.Equals("Food"))
+            {
+                foreach(Renderer renderer in gameObject.GetComponentsInChildren<Renderer>())
+                {
+                    renderer.enabled = false;
+                }
+                CanInteract = false;
+                //gameObject.SetActive(false);
+                //Destroy(gameObject, 0.4f);
+                
+            }
+            
         }
 
         public override void ResetData()
