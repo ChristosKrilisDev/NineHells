@@ -51,8 +51,21 @@ namespace _Scripts.Character
                 return;
             }
 
+            if (CheckIfBelowHeight(-2)) ResetPlayer();
+
             ClimbInput();
             Jump();
+        }
+
+        private bool CheckIfBelowHeight(float minHeight)
+        {
+            if(transform.position.y<minHeight) return true;
+            return false;
+        }
+
+        private void ResetPlayer()
+        {
+            LoadingManager.instance.ReloadScene();
         }
 
         private void ClimbInput()
