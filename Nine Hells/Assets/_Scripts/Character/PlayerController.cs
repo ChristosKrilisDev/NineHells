@@ -20,6 +20,8 @@ namespace _Scripts.Character
         private Rigidbody _rb;
 
         private float previousMoveX = 0;
+        private bool rotating = false;
+        private Vector3 previousAngles;
 
         private void Start()
         {
@@ -67,7 +69,17 @@ namespace _Scripts.Character
 
         private void RotateOtherSide()
         {
-            transform.DOLocalRotate(transform.eulerAngles+Vector3.up*180,0.2f);
+            if (rotating)
+            {
+                transform.DOKill();
+                transform.eulerAngles = previousAngles + Vector3.up * 180;
+            }
+            rotating = true;
+            previousAngles = transform.eulerAngles;
+            transform.DOLocalRotate(transform.eulerAngles + Vector3.up * 180, 0.2f).OnComplete(() =>
+            {
+                rotating = false;
+            });
         }
 
         private bool CheckIfBelowHeight(float minHeight)
