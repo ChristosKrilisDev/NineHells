@@ -33,6 +33,10 @@ public class LoadingManager : MonoBehaviour
         LoadScene("Hell 2");
     }
 
+    public void ReloadScene()
+    {
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name);
+    }
     public void LoadScene(string sceneName)
     {
         SceneManager.LoadSceneAsync(sceneName);
