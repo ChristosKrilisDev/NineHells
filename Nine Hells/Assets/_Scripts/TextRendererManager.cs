@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
+using _Scripts.Interactions.InteractionsSO;
 
 public class TextRendererManager : MonoBehaviour
 {
@@ -36,7 +37,7 @@ public class TextRendererManager : MonoBehaviour
     [SerializeField] private float renderDelayTime = 50f;
     [SerializeField] private float textDurationTime = 6.0f;
 
-    public void ShowNewDialogue(List<string> dialogues, string charNameSpeaking)
+    public void ShowNewDialogue(List<string> dialogues, string charNameSpeaking, TalkInteraction talkInteraction = null)
     {
         Debug.Log("Typing");
         this.charNameSpeaking.text = charNameSpeaking;
@@ -44,7 +45,7 @@ public class TextRendererManager : MonoBehaviour
         textPanel.gameObject.SetActive(true);
 
 
-        StartCoroutine(ForTheDialogues());
+        StartCoroutine(ForTheDialogues(talkInteraction));
         //StartCoroutine(DisplayDialogue());
         //DisplayDialogue();
     }
@@ -71,7 +72,7 @@ public class TextRendererManager : MonoBehaviour
 
     private Sequence dialogueSequence;
 
-    private IEnumerator ForTheDialogues()
+    private IEnumerator ForTheDialogues(TalkInteraction talkInteraction)
     {
         for (int i = 0; i < this.dialogues.Count; i++)
         {
@@ -80,6 +81,11 @@ public class TextRendererManager : MonoBehaviour
         }
         textPanel.SetActive(false);
         PlayerController.CanMove = true;
+
+        if (talkInteraction != null)
+        {
+            talkInteraction.Finish();
+        }
     }
 
     private bool _dialogueSkipped = false;

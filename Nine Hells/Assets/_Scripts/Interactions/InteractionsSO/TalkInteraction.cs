@@ -9,6 +9,7 @@ namespace _Scripts.Interactions.InteractionsSO
     {
 
         public UnityEvent unityEvent;
+        public UnityEvent finishEvent;
 
         [TextArea]
         [SerializeField] private string charName = "";
@@ -25,7 +26,12 @@ namespace _Scripts.Interactions.InteractionsSO
 
             if (unityEvent != null) unityEvent.Invoke();
             Debug.Log("Typing");
-            TextRendererManager.instance.ShowNewDialogue(dialogues, charName);
+            TextRendererManager.instance.ShowNewDialogue(dialogues, charName, this);
+        }
+
+        public void Finish()
+        {
+            if(finishEvent!=null)finishEvent.Invoke();
         }
     }
 }
