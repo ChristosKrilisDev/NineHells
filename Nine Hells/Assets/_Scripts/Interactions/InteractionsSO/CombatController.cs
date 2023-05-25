@@ -12,6 +12,8 @@ namespace _Scripts.Interactions.InteractionsSO
 
         public GameObject Sword;
         public Vector3 SwordScale;
+
+        public float AttackDelay = 1f;
         
         
         private void Start()
@@ -45,9 +47,16 @@ namespace _Scripts.Interactions.InteractionsSO
 
             if(SwitchPlaneManager.CurrentPlaneState != SwitchPlaneManager.PlaneState.ShadowPlane)
                 return;
-            
-            if (Input.GetKeyDown(KeyCode.Q))
+
+            if (AttackDelay < 1)
             {
+                AttackDelay += Time.deltaTime;
+                return;
+            }
+            
+            if (Input.GetKey(KeyCode.F))
+            {
+                AttackDelay = 0;
 
                 Sword.gameObject.SetActive(true);
                 

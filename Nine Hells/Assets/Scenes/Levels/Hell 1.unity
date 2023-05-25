@@ -208,12 +208,12 @@ PrefabInstance:
     - target: {fileID: 3628006257449458366, guid: 91494ea3206f73e43a402f11cc2c22bc,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -5.6560096e-18
+      value: -4.327772e-16
       objectReference: {fileID: 0}
     - target: {fileID: 3628006257449458366, guid: 91494ea3206f73e43a402f11cc2c22bc,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 1.0946657e-17
+      value: -2.1893312e-17
       objectReference: {fileID: 0}
     - target: {fileID: 4883367770108840309, guid: 91494ea3206f73e43a402f11cc2c22bc,
         type: 3}
@@ -275,50 +275,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Templete
       objectReference: {fileID: 0}
-    - target: {fileID: 4883367771415000061, guid: 91494ea3206f73e43a402f11cc2c22bc,
+    - target: {fileID: 4883367771402207911, guid: 91494ea3206f73e43a402f11cc2c22bc,
         type: 3}
-      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      propertyPath: m_LocalPosition.x
+      value: -7.17
       objectReference: {fileID: 0}
-    - target: {fileID: 4883367771415000061, guid: 91494ea3206f73e43a402f11cc2c22bc,
+    - target: {fileID: 4883367771402207911, guid: 91494ea3206f73e43a402f11cc2c22bc,
         type: 3}
-      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      propertyPath: m_LocalPosition.y
+      value: -2.14
       objectReference: {fileID: 0}
-    - target: {fileID: 4883367771415000061, guid: 91494ea3206f73e43a402f11cc2c22bc,
+    - target: {fileID: 4883367771402207911, guid: 91494ea3206f73e43a402f11cc2c22bc,
         type: 3}
-      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 290703867}
-    - target: {fileID: 4883367771415000061, guid: 91494ea3206f73e43a402f11cc2c22bc,
-        type: 3}
-      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4883367771415000061, guid: 91494ea3206f73e43a402f11cc2c22bc,
-        type: 3}
-      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnNpcHelped
-      objectReference: {fileID: 0}
-    - target: {fileID: 4883367771415000061, guid: 91494ea3206f73e43a402f11cc2c22bc,
-        type: 3}
-      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Hell1, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 4883367771415000061, guid: 91494ea3206f73e43a402f11cc2c22bc,
-        type: 3}
-      propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      propertyPath: m_LocalPosition.z
+      value: -15.51
       objectReference: {fileID: 0}
     - target: {fileID: 4883367771549423150, guid: 91494ea3206f73e43a402f11cc2c22bc,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -5.6560096e-18
+      value: -4.327772e-16
       objectReference: {fileID: 0}
     - target: {fileID: 4883367771549423150, guid: 91494ea3206f73e43a402f11cc2c22bc,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 1.0946657e-17
+      value: -2.1893312e-17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91494ea3206f73e43a402f11cc2c22bc, type: 3}

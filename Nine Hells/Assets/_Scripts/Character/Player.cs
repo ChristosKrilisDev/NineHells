@@ -16,29 +16,29 @@ namespace _Scripts.Character
             MoralityBarGUI.Init();
         }
 
-        private void AddSin()
+        public void AddSin()
         {
             _points.AddSinPoint();
             MoralityBarGUI.UpdateMoralityBar(-1);
         }
 
-        private void AddVirtue()
+        public void AddVirtue()
         {
             _points.AddVirtuePoint();
             MoralityBarGUI.UpdateMoralityBar(+1);
         }
 
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.Z))
-            {
-                AddSin();
-            }
-            if (Input.GetKeyDown(KeyCode.X))
-            {
-                AddVirtue();
-            }
-        }
+        // private void Update()
+        // {
+        //     if (Input.GetKeyDown(KeyCode.Z))
+        //     {
+        //         AddSin();
+        //     }
+        //     if (Input.GetKeyDown(KeyCode.X))
+        //     {
+        //         AddVirtue();
+        //     }
+        // }
 
     }
 }

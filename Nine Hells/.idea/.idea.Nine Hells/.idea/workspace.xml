@@ -4,12 +4,7 @@
     <list default="true" id="b9278631-f436-40de-b250-ac2bd0a5f5cd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Nine Hells/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Nine Hells/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Hell 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Hell 2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Characters/character low poly .prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Characters/character low poly .prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Final/sword.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Final/sword.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionsSO/CombatController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Interactions/InteractionsSO/CombatController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/PlaneObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/PlaneObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/SwitchPlaneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/SwitchPlaneManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Hell 3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Hell 3.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +36,14 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Builds\Nine Hells.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\krili\Desktop\Git\NineHells\Nine Hells\Builds" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.18f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;C:\Users\krili\Desktop\Git\nine_hells\Nine Hells&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
@@ -85,7 +88,7 @@
       <workItem from="1684843408408" duration="7165000" />
       <workItem from="1684864605482" duration="5550000" />
       <workItem from="1684880810750" duration="1867000" />
-      <workItem from="1684929646728" duration="7655000" />
+      <workItem from="1684929646728" duration="16606000" />
     </task>
     <servers />
   </component>
