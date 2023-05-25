@@ -51,7 +51,7 @@ namespace _Scripts.Character
                 return;
             }
 
-            if (CheckIfBelowHeight(-2)) ResetPlayer();
+            if (CheckIfBelowHeight(-7)) ResetPlayer();
 
             ClimbInput();
             Jump();
