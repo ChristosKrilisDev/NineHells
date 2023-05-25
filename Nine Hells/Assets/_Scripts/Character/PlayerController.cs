@@ -1,4 +1,5 @@
 using UnityEngine;
+using DG.Tweening;
 
 namespace _Scripts.Character
 {
@@ -18,6 +19,8 @@ namespace _Scripts.Character
         public static bool CanMove = true;
         private Rigidbody _rb;
 
+        private float previousMoveX = 0;
+
         private void Start()
         {
             _rb = GetComponent<Rigidbody>();
@@ -33,7 +36,12 @@ namespace _Scripts.Character
 
             var moveX = Input.GetAxisRaw("Horizontal");
             _rb.velocity = new Vector2(moveX * _moveSpeed, _rb.velocity.y);
-            
+
+            if((previousMoveX<0 && moveX>0) || (previousMoveX>0 && moveX<0)) RotateOtherSide();
+
+            if(moveX!=0)previousMoveX = moveX;
+
+
             if (!_isClimbing) return;
 
             var moveY = Input.GetAxisRaw("Vertical");
@@ -55,6 +63,11 @@ namespace _Scripts.Character
 
             ClimbInput();
             Jump();
+        }
+
+        private void RotateOtherSide()
+        {
+            transform.DOLocalRotate(transform.eulerAngles+Vector3.up*180,0.2f);
         }
 
         private bool CheckIfBelowHeight(float minHeight)
