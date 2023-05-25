@@ -12,6 +12,7 @@ namespace _Scripts
         public GameObject materialNPC;
         public Animator Animator;
         public GameObject Head;
+        public bool CountEnemyDeath;
         
         public void Init(int hp)
         {
@@ -24,7 +25,10 @@ namespace _Scripts
 
             if (_hp <= 0)
             {
-                Hell2.IncreaseKilledEnemies();
+                if (CountEnemyDeath) //todo : add level 6 counter
+                {
+                    Hell2.IncreaseKilledEnemies();
+                }
                 //die
                 // Destroy(gameObject);
                 Animator.SetBool("die",true);
@@ -50,7 +54,7 @@ namespace _Scripts
                     // Destroy(materialNPC.GetComponent<Animator>());
                 }
 
-                transform.DOLocalMoveX(0.01f, 1f).OnComplete(()=>
+                transform.DOLocalMoveX(0.01f, 0.5f).OnComplete(()=>
                 {
                     Animator.SetBool("isDead",true);
                     transform.GetComponent<BoxCollider>().enabled = false;
