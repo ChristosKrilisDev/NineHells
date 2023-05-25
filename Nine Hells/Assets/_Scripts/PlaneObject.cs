@@ -105,11 +105,11 @@ public class PlaneObject : MonoBehaviour
     {
         if (TypeObject == PlaneTypeObject.Material)
         {
-            StartCoroutine(SwitchToShow(_materialGO, _dissolveMaterialPlaneMat, 1, SwitchPlaneManager.PlaneState.MaterialPlane));
+            StartCoroutine(SwitchToShow(_materialGO, _dissolveShadowPlaneMat, 1, SwitchPlaneManager.PlaneState.MaterialPlane));
         }
         else if (TypeObject == PlaneTypeObject.Shadow)
         {
-            StartCoroutine(SwitchToHide(_shadowGO, _dissolveShadowPlaneMat, 0f));
+            StartCoroutine(SwitchToHide(_shadowGO, _dissolveMaterialPlaneMat, 0f));
         }
         else
         {
@@ -118,8 +118,8 @@ public class PlaneObject : MonoBehaviour
                 Reflect.UseReflect(_materialGO.gameObject, _shadowGO.gameObject, rType);
             }
 
-            StartCoroutine(SwitchToHide(_shadowGO, _dissolveShadowPlaneMat, 0f));
-            StartCoroutine(SwitchToShow(_materialGO, _dissolveMaterialPlaneMat, 1, SwitchPlaneManager.PlaneState.MaterialPlane));
+            StartCoroutine(SwitchToHide(_shadowGO, _dissolveMaterialPlaneMat, 0f));
+            StartCoroutine(SwitchToShow(_materialGO, _dissolveShadowPlaneMat, 1, SwitchPlaneManager.PlaneState.MaterialPlane));
         }
 
     }
