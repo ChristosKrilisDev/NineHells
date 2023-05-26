@@ -1,4 +1,5 @@
 
+using _Scripts.Character;
 using _Scripts.Interactions.InteractionsSO;
 using UnityEngine;
 
@@ -87,7 +88,7 @@ public class SwitchPlaneManager : MonoBehaviour
             po.SwitchPlane(planeState);
         }
 
-        
+        CombatController.gameObject.GetComponent<PlayerInteraction>().DisableFocusedObject();
  
     }
 }

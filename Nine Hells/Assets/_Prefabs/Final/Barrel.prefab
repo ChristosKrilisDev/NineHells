@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 289832745918085181}
   - component: {fileID: 289832745918085170}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,6 +46,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7722b5214efe4be48be8519018906efa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TypeObject: 0
+  rType: 0
+  UseReflect: 0
   _materialGO: {fileID: 5356752639467469205}
   _shadowGO: {fileID: 4728476850089381798}
 --- !u!1 &2882170189979718395
@@ -59,7 +62,7 @@ GameObject:
   - component: {fileID: 8962100155105841879}
   - component: {fileID: 4728476850089381798}
   - component: {fileID: 60000783019743363}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Barrel (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +155,7 @@ GameObject:
   - component: {fileID: 4593638075660859716}
   - component: {fileID: 1599929417845618654}
   - component: {fileID: 916373558272906552}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,6 +207,7 @@ MeshRenderer:
   m_Materials:
   - {fileID: -4042805660767941618, guid: 659b46c18961aca41aeccb7156ad5807, type: 3}
   - {fileID: 2100000, guid: 2decbb4688b7ddc4b941147fc705792e, type: 2}
+  - {fileID: 2100000, guid: cd7d0a9e30eee6b4da657895aeef270a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -238,6 +242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
 --- !u!1 &5356752639467469194
 GameObject:
@@ -250,7 +255,7 @@ GameObject:
   - component: {fileID: 5356752639467469193}
   - component: {fileID: 5356752639467469205}
   - component: {fileID: 5643770630119591921}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +348,7 @@ GameObject:
   - component: {fileID: 5667710552820377160}
   - component: {fileID: 1947260838827148760}
   - component: {fileID: 540688737195026964}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -395,6 +400,7 @@ MeshRenderer:
   m_Materials:
   - {fileID: -4042805660767941618, guid: 659b46c18961aca41aeccb7156ad5807, type: 3}
   - {fileID: 2100000, guid: 2decbb4688b7ddc4b941147fc705792e, type: 2}
+  - {fileID: 2100000, guid: cd7d0a9e30eee6b4da657895aeef270a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -429,4 +435,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyMaterial: []
+  UseColor: 1
   MeshRenderer: {fileID: 0}
