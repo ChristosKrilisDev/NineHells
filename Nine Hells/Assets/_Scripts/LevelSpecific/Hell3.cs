@@ -31,7 +31,7 @@ public class Hell3 : MonoBehaviour
 
     public void Rotate(float angle)
     {
-        Debug.Log(angle);
+        //Debug.Log(angle);
         balanceScale.transform.DORotate(new Vector3(balanceScale.transform.eulerAngles.x, balanceScale.transform.eulerAngles.y, balanceScale.transform.eulerAngles.z + angle), 1);
         chainTipLeft.transform.DORotate(new Vector3(chainTipLeft.transform.eulerAngles.x, chainTipLeft.transform.eulerAngles.y, chainTipLeft.transform.eulerAngles.z), 1);
         chainTipRight.transform.DORotate(new Vector3(chainTipRight.transform.eulerAngles.x, chainTipRight.transform.eulerAngles.y, chainTipRight.transform.eulerAngles.z), 1);
@@ -48,6 +48,28 @@ public class Hell3 : MonoBehaviour
 
         float targetAngle = (weight - minWeight) * (maxAngle - minAngle) / (maxWeight - minWeight) + minAngle;
         Rotate(targetAngle);
+
+        if(weight>=50)StartCoroutine(CheckObjective(weight));
+    }
+
+    IEnumerator CheckObjective(float weight)
+    {
+        yield return new WaitForSeconds(3);
+
+        GetComponent<GoalManager>().OnGoalReached();
+
+        if (weight == 50) Virtue();
+        else Sin();
+    }
+
+    private void Virtue()
+    {
+        
+    }
+
+    private void Sin()
+    {
+        
     }
 
     public void GainWeight()
@@ -64,7 +86,7 @@ public class Hell3 : MonoBehaviour
             _ => 0
         };
 
-        Debug.Log($"Weight: {currentWeight}");
+        //Debug.Log($"Weight: {currentWeight}");
     }
 
     public void CheckWeight()
