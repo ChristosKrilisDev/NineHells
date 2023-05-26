@@ -8606,7 +8606,15 @@ PrefabInstance:
       value: Mr. Jedadiah
       objectReference: {fileID: 0}
     - target: {fileID: 1729110303, guid: b504755b40fb4d64c9bf1eda0ead1a85, type: 3}
+      propertyPath: exitEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729110303, guid: b504755b40fb4d64c9bf1eda0ead1a85, type: 3}
       propertyPath: finishEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729110303, guid: b504755b40fb4d64c9bf1eda0ead1a85, type: 3}
+      propertyPath: exitEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1729110303, guid: b504755b40fb4d64c9bf1eda0ead1a85, type: 3}
@@ -8617,6 +8625,10 @@ PrefabInstance:
       propertyPath: finishEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 928935266}
+    - target: {fileID: 1729110303, guid: b504755b40fb4d64c9bf1eda0ead1a85, type: 3}
+      propertyPath: exitEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1729110303, guid: b504755b40fb4d64c9bf1eda0ead1a85, type: 3}
       propertyPath: finishEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -21965,7 +21977,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1923709401590854925}
-  m_LocalRotation: {x: 0.11267517, y: -5.6560096e-18, z: 1.0946657e-17, w: 0.9936319}
+  m_LocalRotation: {x: 0.11267517, y: 5.6560096e-18, z: -1.0946657e-17, w: 0.9936319}
   m_LocalPosition: {x: -11.06, y: -0.059999943, z: -26.084906}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -34880,7 +34892,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7723131195475032466}
-  m_LocalRotation: {x: 0.11267517, y: -5.6560096e-18, z: 1.0946657e-17, w: 0.9936319}
+  m_LocalRotation: {x: 0.11267517, y: 5.6560096e-18, z: -1.0946657e-17, w: 0.9936319}
   m_LocalPosition: {x: -11.06, y: -0.059999943, z: -26.084906}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

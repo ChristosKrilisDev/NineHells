@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using _Scripts.Interactions.InteractionsSO;
+using System.Linq;
+using _Scripts.Character;
 
 public class Hell3 : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class Hell3 : MonoBehaviour
     public GameObject chainTipLeft;
     public GameObject chainTipRight;
 
+    public GameObject player;
     private float currentWeight = 0;
 
     private Vector3 balanceScaleDefault;
@@ -54,22 +57,44 @@ public class Hell3 : MonoBehaviour
 
     IEnumerator CheckObjective(float weight)
     {
-        yield return new WaitForSeconds(3);
-
-        GetComponent<GoalManager>().OnGoalReached();
+        yield return new WaitForSeconds(2);
 
         if (weight == 50) Virtue();
         else Sin();
+
+        GetComponent<GoalManager>().OnGoalReached();
+
+        
     }
 
     private void Virtue()
     {
-        
+        player.GetComponent<Player>().AddVirtue();
     }
 
     private void Sin()
     {
-        
+        balanceScale.transform.parent.gameObject.AddComponent<Rigidbody>();
+
+        AddStability(balanceScale.transform.parent);
+        AddStability(balanceScale.transform);
+        AddStability(chainTipLeft.transform);
+        AddStability(chainTipRight.transform);
+
+        balanceScale.transform.parent.gameObject.GetComponent<Rigidbody>().AddExplosionForce(1000, balanceScale.transform.position, 5);
+
+        player.GetComponent<Player>().AddSin();
+    }
+
+    private void AddStability(Transform _transform)
+    {
+        for (int i = 0; i < _transform.childCount; i++)
+        {
+            GameObject go = _transform.GetChild(i).gameObject;
+            go.AddComponent<Rigidbody>();
+            go.AddComponent<MeshCollider>();
+            go.GetComponent<MeshCollider>().convex = true;
+        }
     }
 
     public void GainWeight()
