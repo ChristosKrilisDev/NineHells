@@ -236,7 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3880ddd7dd58caf4aae61a7b0e44bf27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _planeText: {fileID: 0}
+  _planeText: {fileID: 5513825171550036814}
   _planeImage: {fileID: 1587051701}
 --- !u!1 &1587051699
 GameObject:
@@ -3003,7 +3003,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 750, y: -325}
+  m_AnchoredPosition: {x: 750, y: 0}
   m_SizeDelta: {x: 1450, y: 200}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &8196356435940257471

@@ -1,3 +1,4 @@
+using _Scripts.Character;
 using DG.Tweening;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,8 @@ using UnityEngine;
 public class Hell4 : MonoBehaviour
 {
     Transform bucket;
+
+    public GameObject player;
     
     public void GrabBucket(List<Transform> args)
     {
@@ -23,11 +26,20 @@ public class Hell4 : MonoBehaviour
         bucket.GetComponent<Rigidbody>().isKinematic = false;
     }
 
+    public void Virtue()
+    {
+        player.GetComponent<Player>().AddVirtue();
+        GetComponent<GoalManager>().OnGoalReached();
+    }
+
+    public void Sin()
+    {
+        player.GetComponent<Player>().AddSin();
+        GetComponent<GoalManager>().OnGoalReached();
+    }
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            DropBucket();
-        }
+        
     }
 }
