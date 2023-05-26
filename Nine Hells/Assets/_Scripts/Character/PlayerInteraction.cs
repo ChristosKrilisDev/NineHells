@@ -75,5 +75,16 @@ namespace _Scripts.Character
             _hasInteract = false;
             interactable.Reset();
         }
+
+        public void DisableFocusedObject()
+        {
+            if (_focusedObj != null)
+            {
+                _hasInteract = false;
+                _focusedObj.Disable();
+                _focusedObj = null;
+            }
+            
+        }
     }
 }
