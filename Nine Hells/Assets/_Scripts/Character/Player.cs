@@ -20,12 +20,14 @@ namespace _Scripts.Character
         {
             _points.AddSinPoint();
             MoralityBarGUI.UpdateMoralityBar(-1);
+            HUD.Instance.PlayerStatsGUI.ChangePlayerMoralUI(-1);
         }
 
         public void AddVirtue()
         {
             _points.AddVirtuePoint();
             MoralityBarGUI.UpdateMoralityBar(+1);
+            HUD.Instance.PlayerStatsGUI.ChangePlayerMoralUI(+1);
         }
 
         // private void Update()

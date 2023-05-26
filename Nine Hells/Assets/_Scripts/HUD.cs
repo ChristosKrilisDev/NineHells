@@ -5,18 +5,21 @@ using UnityEngine;
 
 public class HUD : MonoBehaviour
 {
-
-
     public PlayerStatsGUI PlayerStatsGUI;
-    
     public static HUD Instance;
 
-    private void Awake()
+    void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
         }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+        DontDestroyOnLoad(gameObject);
     }
 
     // Start is called before the first frame update

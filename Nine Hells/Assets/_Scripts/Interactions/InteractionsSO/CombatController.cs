@@ -7,7 +7,7 @@ namespace _Scripts.Interactions.InteractionsSO
     public class CombatController : MonoBehaviour
     {
         public float RaycastDistance = 10f;
-
+        public float playerHealth = 100.0f;
         public Animator Animator;
 
         public GameObject Sword;
@@ -18,6 +18,8 @@ namespace _Scripts.Interactions.InteractionsSO
         
         private void Start()
         {
+            playerHealth = 100.0f;
+            HUD.Instance.PlayerStatsGUI.ChangePlayerHPUI(playerHealth);
             SwordScale = Sword.transform.localScale;
             HideWeapon();
         }
@@ -44,9 +46,18 @@ namespace _Scripts.Interactions.InteractionsSO
         
         private void Update()
         {
+            if (Input.GetKeyDown(KeyCode.N))
+            {
+                playerHealth -= 10.0f;
+                HUD.Instance.PlayerStatsGUI.ChangePlayerHPUI(playerHealth);
+                if (playerHealth <= 0.0f)
+                {
+                    Debug.Log("GAME OVER");
+                }
+            }
 
-            if(SwitchPlaneManager.CurrentPlaneState != SwitchPlaneManager.PlaneState.ShadowPlane)
-                return;
+            if (SwitchPlaneManager.CurrentPlaneState != SwitchPlaneManager.PlaneState.ShadowPlane)
+            return;
 
             if (AttackDelay < 1)
             {

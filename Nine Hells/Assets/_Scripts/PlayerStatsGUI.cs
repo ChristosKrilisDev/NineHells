@@ -11,6 +11,8 @@ public class PlayerStatsGUI : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI _planeText;
     [SerializeField] private Image _planeImage;
+    [SerializeField] private Slider healthBarSlider;
+    [SerializeField] private Slider moralityBarSlider;
 
 
     public void ChangePlaneUI(SwitchPlaneManager.PlaneState planeState)
@@ -45,9 +47,14 @@ public class PlayerStatsGUI : MonoBehaviour
         }
     }
 
-    public void ChangePlayerHPUI()
+    public void ChangePlayerHPUI(float health)
     {
-        
+        healthBarSlider.value = health / 100.0f;
+    }
+
+    public void ChangePlayerMoralUI(float morality)
+    {
+        moralityBarSlider.value += morality / 10.0f;
     }
 
     public void AddDebuffUI(Sprite sprite)
