@@ -13,6 +13,9 @@ public class PlayerStatsGUI : MonoBehaviour
     [SerializeField] private Image _planeImage;
     [SerializeField] private Slider healthBarSlider;
     [SerializeField] private Slider moralityBarSlider;
+    [SerializeField] private List<GameObject> playerBuffsUi;
+    [SerializeField] private List<GameObject> playerDebuffsUi;
+    private int activeBuffs = 0, activeDebuffs = 0;
 
 
     public void ChangePlaneUI(SwitchPlaneManager.PlaneState planeState)
@@ -55,6 +58,40 @@ public class PlayerStatsGUI : MonoBehaviour
     public void ChangePlayerMoralUI(float morality)
     {
         moralityBarSlider.value += morality / 10.0f;
+    }
+
+    public void RefreshBuffsUi(List<Buff> playerBuffs)
+    {
+        foreach (GameObject buffUI in playerBuffsUi)
+        {
+            activeBuffs = 0;
+            buffUI.SetActive(false);
+        }
+
+        foreach (Buff buff in playerBuffs)
+        {
+            Debug.Log("VAZW SPRITE");
+
+            playerBuffsUi[activeBuffs].transform.GetChild(0).GetComponent<Image>().sprite = buff.buffSprite;
+            playerBuffsUi[activeBuffs].SetActive(true);
+            activeBuffs++;
+        }
+
+    }
+    public void RefreshDebuffsUi(List<Buff> playerDebuffs)
+    {
+        foreach (GameObject debuffUI in playerDebuffsUi)
+        {
+            activeDebuffs = 0;
+            debuffUI.SetActive(false);
+        }
+
+        foreach (Buff debuff in playerDebuffs)
+        {
+            playerDebuffsUi[activeDebuffs].transform.GetChild(0).GetComponent<Image>().sprite = debuff.buffSprite;
+            playerDebuffsUi[activeDebuffs].SetActive(true);
+            activeDebuffs++;
+        }
     }
 
     public void AddDebuffUI(Sprite sprite)

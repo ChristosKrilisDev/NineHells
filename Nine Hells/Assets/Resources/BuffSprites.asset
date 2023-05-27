@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee444f6e7ac13734499d1f81316496d5, type: 3}
+  m_Name: BuffSprites
+  m_EditorClassIdentifier: 
+  Buff01: {fileID: 21300000, guid: 6d05e2b8f33f53e4ca23fd915d476f28, type: 3}
+  Buff02: {fileID: 21300000, guid: b93fa64ac1d1a964891ee29a92aae109, type: 3}
+  Buff03: {fileID: 21300000, guid: ad40ca74a5f0b014497e3d7463f527fa, type: 3}
+  Debuff01: {fileID: 21300000, guid: 2c8474fb146054d40b05db2ddf6e6d4b, type: 3}
+  Debuff02: {fileID: 21300000, guid: df70d9e36bba5694f889a6331ca675b6, type: 3}
+  Debuff03: {fileID: 21300000, guid: 59caadae8845dd341a39e3e234761d3d, type: 3}

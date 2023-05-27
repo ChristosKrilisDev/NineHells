@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ namespace _Scripts.Interactions.InteractionsSO
     {
         public float RaycastDistance = 10f;
         public float playerHealth = 100.0f;
+        public List<Buff> playerBuffs = new(), playerDebuffs = new();
         public Animator Animator;
 
         public GameObject Sword;
@@ -43,9 +45,67 @@ namespace _Scripts.Interactions.InteractionsSO
 
             // Sword.SwitchPlane(SwitchPlaneManager.PlaneState.MaterialPlane);
         }
-        
+
+        void AddBuffToPlayer(Buff newBuff)
+        {
+            bool playerAlreadyHasBuff = false;
+
+            if (newBuff.buffType == BuffType.Buff)
+            {
+                foreach (Buff buff in playerBuffs)
+                {
+                    if (buff.buffNo == newBuff.buffNo)
+                    {
+                        playerAlreadyHasBuff = true;
+                        break;
+                    }
+                }
+
+                if (!playerAlreadyHasBuff)
+                {
+                    playerBuffs.Add(newBuff);
+                    HUD.Instance.PlayerStatsGUI.RefreshBuffsUi(playerBuffs);
+                }
+            }
+            else
+            {
+                foreach(Buff debuff in playerDebuffs)
+                    {
+                    if (debuff.buffNo == newBuff.buffNo)
+                    {
+                        playerAlreadyHasBuff = true;
+                        break;
+                    }
+                }
+
+                if (!playerAlreadyHasBuff)
+                {
+                    playerDebuffs.Add(newBuff);
+                    HUD.Instance.PlayerStatsGUI.RefreshDebuffsUi(playerDebuffs);
+                }
+            }
+        }
+
         private void Update()
         {
+            if (Input.GetKeyDown(KeyCode.M))
+            {
+                Buff buff = new Buff(BuffType.Buff, 1);
+                AddBuffToPlayer(buff);
+            }
+
+            if (Input.GetKeyDown(KeyCode.K))
+            {
+                Buff buff = new Buff(BuffType.Buff, 3);
+                AddBuffToPlayer(buff);
+            }
+
+            if (Input.GetKeyDown(KeyCode.L))
+            {
+                Buff buff = new Buff(BuffType.Debuff, 1);
+                AddBuffToPlayer(buff);
+            }
+
             if (Input.GetKeyDown(KeyCode.N))
             {
                 playerHealth -= 10.0f;
