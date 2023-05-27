@@ -86,6 +86,11 @@ namespace _Scripts.Interactions.InteractionsSO
                     enemy.TakeDamage(1);
                     // hit.collider.gameObject.GetComponent<Enemy>().TakeDamage(10);
                 }
+
+                if(hit.collider.TryGetComponent<BarrelFood>(out BarrelFood barrelFood))
+                {
+                    barrelFood.TakeDamage(1);
+                }
             }
         }
 
