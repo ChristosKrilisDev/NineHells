@@ -9,7 +9,7 @@ public class BarrelFood : MonoBehaviour
 
     void Start()
     {
-        food.SetActive(false);    
+        if(food)food.SetActive(false);    
     }
     public void TakeDamage(float damage)
     {
@@ -17,7 +17,7 @@ public class BarrelFood : MonoBehaviour
 
         if (health <= 0)
         {
-            food.SetActive(true);
+            if(food)food.SetActive(true);
             gameObject.SetActive(false);
         }
         else transform.DOShakeScale(0.5f);

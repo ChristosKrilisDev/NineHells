@@ -90,6 +90,7 @@ namespace _Scripts.Interactions.InteractionsSO
                 if(hit.collider.TryGetComponent<BarrelFood>(out BarrelFood barrelFood))
                 {
                     barrelFood.TakeDamage(1);
+                    Debug.Log("Hit barrels");
                 }
             }
         }
