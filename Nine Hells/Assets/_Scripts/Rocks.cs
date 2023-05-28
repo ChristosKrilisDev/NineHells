@@ -25,7 +25,7 @@ namespace _Scripts
                 _rocks1.transform.DOLocalMoveY(_rocks1.transform.localPosition.y -3f, 0.2f);
                 _rocks2.transform.DOLocalMoveY(_rocks2.transform.localPosition.y -3f, 0.2f);
                 
-                transform.DOScale(-0.01f, 0.3f).OnComplete(() =>
+                transform.DOMoveX(-0.01f, 0.3f).OnComplete(() =>
                 {
                     transform.gameObject.GetComponent<BoxCollider>().enabled = false;
                 });
