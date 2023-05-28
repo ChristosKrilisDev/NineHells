@@ -240,6 +240,14 @@ MonoBehaviour:
   _planeImage: {fileID: 1587051701}
   healthBarSlider: {fileID: 5748919295960212536}
   moralityBarSlider: {fileID: 1481689194829908559}
+  playerBuffsUi:
+  - {fileID: 8871688820295745490}
+  - {fileID: 5704551031717749143}
+  - {fileID: 2448545241167662767}
+  playerDebuffsUi:
+  - {fileID: 3660653141764812952}
+  - {fileID: 5439856107704062485}
+  - {fileID: 348834370457430273}
 --- !u!1 &1587051699
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,7 +496,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5581205726684102919
 RectTransform:
   m_ObjectHideFlags: 0
@@ -890,7 +898,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5104236579051248490
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1330,7 +1338,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &9164430952563176478
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1800,7 +1808,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1189216823181611244
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1955,7 +1963,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6469035487022301426
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4964,7 +4972,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3198877771165802622
 RectTransform:
   m_ObjectHideFlags: 0
