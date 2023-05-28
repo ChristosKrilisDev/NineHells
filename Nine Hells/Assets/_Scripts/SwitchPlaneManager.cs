@@ -1,4 +1,5 @@
 
+using System;
 using _Scripts.Character;
 using _Scripts.Interactions.InteractionsSO;
 using UnityEngine;
@@ -34,19 +35,21 @@ public class SwitchPlaneManager : MonoBehaviour
 
     private void Awake()
     {
-        _planeObjects = FindObjectsOfType<PlaneObject>();
-
+        _planeObjects = FindObjectsOfType<PlaneObject>(true);
+        
         foreach (var plane in _planeObjects)
         {
             plane.Init(_dissolveMaterialPlaneMat, _dissolveShadowPlaneMat);
         }
 
 
+    }
+
+    private void Start()
+    {
         CurrentPlaneState = PlaneState.MaterialPlane;
         SwitchPlane(CurrentPlaneState);
     }
-
-
 
     // Update is called once per frame
     void Update()

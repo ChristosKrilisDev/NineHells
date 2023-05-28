@@ -43,7 +43,7 @@ public class PlaneObject : MonoBehaviour
     private void Start()
     {
         _shadowGO.gameObject.SetActive(false);
-
+        
         if (TypeObject == PlaneTypeObject.Shadow)
         {
             _materialGO.gameObject.SetActive(false);
@@ -136,7 +136,7 @@ public class PlaneObject : MonoBehaviour
 
         parent.SetMaterial(dissolveMat);
 
-        foreach (var ch in parent.Childs)
+        foreach (var ch in parent.Childds)
         {
 
             ch.SetMaterials(dissolveMat);
@@ -156,7 +156,7 @@ public class PlaneObject : MonoBehaviour
 
         parent.ResetMaterial();
 
-        foreach (var ch in parent.Childs)
+        foreach (var ch in parent.Childds)
         {
             ch.ResetMaterials();
             ch.gameObject.SetActive(false);
@@ -174,11 +174,15 @@ public class PlaneObject : MonoBehaviour
         parent.gameObject.SetActive(true);
         parent.SetMaterial(dissolveMat);
 
-        foreach (var ch in parent.Childs)
+        if (parent.Childds.Count > 0)
         {
-            ch.gameObject.SetActive(true);
-            ch.SetMaterials(dissolveMat);
+            foreach (var ch in parent.Childds)
+            {
+                ch.gameObject.SetActive(true);
+                ch.SetMaterials(dissolveMat);
+            }
         }
+
 
         while (startValue >= 0.25f)
         {
@@ -190,10 +194,15 @@ public class PlaneObject : MonoBehaviour
 
         parent.ResetMaterial();
 
-        foreach (var ch in parent.Childs)
+        if (parent.Childds.Count > 0)
         {
-            ch.ResetMaterials();
+            foreach (var ch in parent.Childds)
+            {
+                ch.ResetMaterials();
+            }
         }
+
+   
         
         SwitchPlaneManager.CurrentPlaneState = state;
 

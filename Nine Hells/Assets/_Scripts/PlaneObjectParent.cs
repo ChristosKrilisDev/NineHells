@@ -5,11 +5,46 @@ namespace _Scripts
     public class PlaneObjectParent : MonoBehaviour
     {
         public List<Material> MyMaterial;
-        [HideInInspector]public MeshRenderer MeshRenderer;
-        public List<PlaneObjectChild> Childs;
+        [HideInInspector] public MeshRenderer MeshRenderer;
+        public List<PlaneObjectChild> Childds;
+
+        public bool isChar;
 
         private void Awake()
         {
+            // gameObject.SetActive(true);
+            Childds = new List<PlaneObjectChild>();
+
+            bool isNPC = gameObject.GetComponent<NPC>();
+            bool isEnemy = gameObject.GetComponent<Enemy>();
+            
+            if (isNPC || isEnemy || isChar)
+            {
+                for (int i = 0; i < transform.childCount; i++)
+                {
+                    var t = transform.GetChild(i);
+                    for (int j = 0; j < t.childCount; j++)
+                    {
+                        if (t.GetChild(j).TryGetComponent(out PlaneObjectChild poc)) ;
+                        {
+                            Childds.Add(poc);
+                        }
+                    }
+                }
+            }
+            else
+            {
+                for (int i = 0; i < transform.childCount; i++)
+                {
+                    if (transform.GetChild(i).TryGetComponent(out PlaneObjectChild poc)) ;
+                    {
+                        Childds.Add(poc);
+                    }
+                }
+            }
+
+            
+
             MeshRenderer = GetComponent<MeshRenderer>();
             MyMaterial = new List<Material>();
 
@@ -22,8 +57,6 @@ namespace _Scripts
             ResetMaterial();
         }
 
-        
-        
         public void ResetMaterial()
         {
             MeshRenderer.materials = MyMaterial.ToArray();
@@ -36,7 +69,6 @@ namespace _Scripts
             // }
         }
 
-
         public void SetMaterial(Material material)
         {
             Material[] newMats = new Material[MeshRenderer.materials.Length];
@@ -44,11 +76,11 @@ namespace _Scripts
             for (int i = 0; i < newMats.Length; i++)
             {
                 newMats[i] = material;
-                
+
             }
 
             MeshRenderer.materials = newMats;
-        
+
         }
     }
 }

@@ -152,6 +152,11 @@ namespace _Scripts.Interactions.InteractionsSO
                     barrelFood.TakeDamage(1);
                     Debug.Log("Hit barrels");
                 }
+
+                if (hit.collider.TryGetComponent(out Rocks rocks))
+                {
+                    rocks.HitRocks();
+                }
             }
         }
 
