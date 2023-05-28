@@ -1082,6 +1082,8 @@ MonoBehaviour:
   materialNPC: {fileID: 9089419873799667931}
   Animator: {fileID: 7679328966379814972}
   Head: {fileID: 0}
+  CountEnemyDeath: 0
+  isDead: 0
 --- !u!65 &535380702
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4026,6 +4028,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanInteract: 1
   InteractionType: 1
+  exitEvent:
+    m_PersistentCalls:
+      m_Calls: []
   unityEvent:
     m_PersistentCalls:
       m_Calls:
@@ -4041,6 +4046,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  finishEvent:
+    m_PersistentCalls:
+      m_Calls: []
   charName: Mike
   dialogues:
   - Yo ma man, I ... Thanks for helping me!
@@ -4057,6 +4065,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 020893e9deed3b24fb28072c74bb6621, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Animator: {fileID: 3880485824263713392}
+  isDead: 0
 --- !u!65 &3309138774865971358
 BoxCollider:
   m_ObjectHideFlags: 0

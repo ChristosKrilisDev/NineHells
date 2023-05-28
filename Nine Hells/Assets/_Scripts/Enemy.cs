@@ -1,3 +1,4 @@
+using System;
 using _Scripts.Character;
 using DG.Tweening;
 using UnityEngine;
@@ -13,10 +14,23 @@ namespace _Scripts
         public Animator Animator;
         public GameObject Head;
         public bool CountEnemyDeath;
+        public bool isDead = false;
         
         public void Init(int hp)
         {
             _hp = hp;
+        }
+
+        private void OnEnable()
+        {
+            if (isDead)
+            {
+                Animator.SetBool("isDead",isDead);
+            }
+            if (_hp > 0)
+            {
+                gameObject.GetComponent<BoxCollider>().enabled = true;
+            }
         }
 
         public void TakeDamage(int amount)
@@ -25,14 +39,16 @@ namespace _Scripts
 
             if (_hp <= 0)
             {
+                
                 if (CountEnemyDeath) //todo : add level 6 counter
                 {
                     Hell2.IncreaseKilledEnemies();
                 }
                 //die
                 // Destroy(gameObject);
+                isDead = true;
                 Animator.SetBool("die",true);
-                
+
 
                 if (materialNPC.TryGetComponent(out Animator animator))
                 {
@@ -43,8 +59,9 @@ namespace _Scripts
                     }
 
                     materialNPC.gameObject.SetActive(true);
+                    materialNPC.GetComponent<NPC>().isDead = isDead;
                     materialNPC.transform.GetComponent<BoxCollider>().enabled = false;
-                    animator.SetBool("isDead",true);
+                    animator.SetBool("isDead",isDead);
 
                     for (int i = 0; i < materialNPC.transform.childCount; i++)
                     {
@@ -56,9 +73,9 @@ namespace _Scripts
 
                 transform.DOLocalMoveX(0.01f, 0.5f).OnComplete(()=>
                 {
-                    Animator.SetBool("isDead",true);
+                    Animator.SetBool("isDead",isDead);
                     transform.GetComponent<BoxCollider>().enabled = false;
-                    Reflect.UseReflect(materialNPC, this.gameObject, PlaneObject.ReflectType.General);
+                    Reflect.UseReflect(materialNPC, this.gameObject, PlaneObject.ReflectType.NPC);
                 });
             }
         }
