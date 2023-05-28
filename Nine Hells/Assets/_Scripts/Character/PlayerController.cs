@@ -16,7 +16,7 @@ namespace _Scripts.Character
         [SerializeField]private float _climbSpeed = 0.5f;
         [SerializeField]private float _jumpForce = 5f;
         
-        public float JumpDelay = 1f;
+        public float JumpDelay = 0.5f;
 
         public static bool CanMove = true;
         private Rigidbody _rb;
