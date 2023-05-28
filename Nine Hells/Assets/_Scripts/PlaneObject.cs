@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using _Scripts;
 using _Scripts.Character;
 using DG.Tweening;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlaneObject : MonoBehaviour
@@ -78,6 +79,9 @@ public class PlaneObject : MonoBehaviour
 
     private void SwitchToShadowPlane()
     {
+        if(!gameObject.activeInHierarchy) return;
+
+        
         if (TypeObject == PlaneTypeObject.Material)
         {
             StartCoroutine(SwitchToHide(_materialGO, _dissolveShadowPlaneMat, 0f));
@@ -103,6 +107,8 @@ public class PlaneObject : MonoBehaviour
 
     private void SwitchToMaterialPlane()
     {
+        if(!gameObject.activeInHierarchy) return;
+        
         if (TypeObject == PlaneTypeObject.Material)
         {
             StartCoroutine(SwitchToShow(_materialGO, _dissolveShadowPlaneMat, 1, SwitchPlaneManager.PlaneState.MaterialPlane));

@@ -140,14 +140,14 @@ namespace _Scripts.Interactions.InteractionsSO
                 Debug.DrawLine(transform.position, transform.right * RaycastDistance,Color.red);
                 Debug.Log("Ray hit: " + hit.collider.gameObject.name);
 
-                if (hit.collider.TryGetComponent<Enemy>(out Enemy enemy))
+                if (hit.collider.TryGetComponent(out Enemy enemy))
                 {
                     Debug.Log("Ray hit: " + enemy.gameObject.name);
                     enemy.TakeDamage(1);
                     // hit.collider.gameObject.GetComponent<Enemy>().TakeDamage(10);
                 }
 
-                if(hit.collider.TryGetComponent<BarrelFood>(out BarrelFood barrelFood))
+                if(hit.collider.TryGetComponent(out BarrelFood barrelFood))
                 {
                     barrelFood.TakeDamage(1);
                     Debug.Log("Hit barrels");

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 6434627882168875029}
   - component: {fileID: 1129536058}
   m_Layer: 0
-  m_Name: 1
+  m_Name: Npc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -148,6 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 020893e9deed3b24fb28072c74bb6621, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Animator: {fileID: 8582594471422268395}
+  isDead: 0
 --- !u!114 &4053258867798624475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,7 +178,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanInteract: 1
   InteractionType: 1
+  exitEvent:
+    m_PersistentCalls:
+      m_Calls: []
   unityEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  finishEvent:
     m_PersistentCalls:
       m_Calls: []
   charName: Essa
@@ -1513,7 +1521,7 @@ GameObject:
   - component: {fileID: 4116755614915993091}
   - component: {fileID: 130574208004131911}
   m_Layer: 0
-  m_Name: 1 (1)
+  m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1648,6 +1656,8 @@ MonoBehaviour:
   materialNPC: {fileID: 889008714801031593}
   Animator: {fileID: 8096805229087203732}
   Head: {fileID: 0}
+  CountEnemyDeath: 0
+  isDead: 0
 --- !u!65 &130574208004131911
 BoxCollider:
   m_ObjectHideFlags: 0
