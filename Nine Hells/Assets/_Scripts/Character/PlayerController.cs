@@ -15,6 +15,8 @@ namespace _Scripts.Character
         [SerializeField]private float _moveSpeed = 5f;
         [SerializeField]private float _climbSpeed = 0.5f;
         [SerializeField]private float _jumpForce = 5f;
+        
+        public float JumpDelay = 1f;
 
         public static bool CanMove = true;
         private Rigidbody _rb;
@@ -104,8 +106,16 @@ namespace _Scripts.Character
 
         private void Jump()
         {
+            if (JumpDelay < 1)
+            {
+                JumpDelay += Time.deltaTime;
+                return;
+            }
+            
             if (Input.GetKeyDown(KeyCode.Space) && IsGrounded)
             {
+                JumpDelay = 0;
+
                 // var force = Mathf.Min(_rb.velocity.y, _jumpForce);
                 //todo: fix max velocity
                 _rb.AddForce(new Vector3(0f, _jumpForce,0), ForceMode.VelocityChange);
