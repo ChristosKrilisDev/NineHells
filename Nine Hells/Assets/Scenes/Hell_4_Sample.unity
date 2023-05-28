@@ -5276,6 +5276,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 701356370}
     m_Modifications:
+    - target: {fileID: 1024952545657184324, guid: 091770b7604a5ef42b6f09a4e0a3df8d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b2e3eda38cdfaa440bc39df78802bdfe, type: 2}
+    - target: {fileID: 2202296369474126354, guid: 091770b7604a5ef42b6f09a4e0a3df8d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 32137634259f32342a10f177b143559b, type: 2}
+    - target: {fileID: 3354146773809119623, guid: 091770b7604a5ef42b6f09a4e0a3df8d,
+        type: 3}
+      propertyPath: TypeObject
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3464649344488106943, guid: 091770b7604a5ef42b6f09a4e0a3df8d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b2e3eda38cdfaa440bc39df78802bdfe, type: 2}
     - target: {fileID: 6546538608762002915, guid: 091770b7604a5ef42b6f09a4e0a3df8d,
         type: 3}
       propertyPath: charName
@@ -30342,7 +30362,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317767766}
-  m_LocalRotation: {x: 0.11267517, y: 4.327772e-16, z: 2.1893312e-17, w: 0.9936319}
+  m_LocalRotation: {x: 0.11267517, y: 5.6560096e-18, z: -1.0946657e-17, w: 0.9936319}
   m_LocalPosition: {x: -11.06, y: -0.059999943, z: -26.084906}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -33908,6 +33928,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 701356370}
     m_Modifications:
+    - target: {fileID: 3354146773809119623, guid: 091770b7604a5ef42b6f09a4e0a3df8d,
+        type: 3}
+      propertyPath: TypeObject
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6546538608762002915, guid: 091770b7604a5ef42b6f09a4e0a3df8d,
         type: 3}
       propertyPath: dialogues.Array.size
@@ -44951,7 +44976,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1932971601}
-  m_LocalRotation: {x: 0.11267517, y: 4.327772e-16, z: 2.1893312e-17, w: 0.9936319}
+  m_LocalRotation: {x: 0.11267517, y: 5.6560096e-18, z: -1.0946657e-17, w: 0.9936319}
   m_LocalPosition: {x: -11.06, y: -0.059999943, z: -26.084906}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
