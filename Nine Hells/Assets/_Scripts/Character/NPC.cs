@@ -10,12 +10,19 @@ public class NPC : MonoBehaviour
     {
         if (!isDead)
         {
-            gameObject.GetComponent<BoxCollider>().enabled = true;
+            if (gameObject.TryGetComponent(out BoxCollider boxCollider))
+            {
+                boxCollider.enabled = true;
+            }
         }
         if (isDead)
         {
             Animator.SetBool("isDead",isDead);
-            gameObject.GetComponent<BoxCollider>().enabled = false;
+
+            if (gameObject.TryGetComponent(out BoxCollider boxCollider))
+            {
+                boxCollider.enabled = false;
+            }
 
         }
     }
