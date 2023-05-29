@@ -35,15 +35,18 @@ public class LoadingManager : MonoBehaviour
 
     public void ReloadScene()
     {
+        Fade.Instance.FadeInAndOut();
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name);
     }
     public void LoadScene(string sceneName)
     {
+        Fade.Instance.FadeInAndOut();
         SceneManager.LoadSceneAsync(sceneName);
     }
 
     public void LoadScene(int level)
     {
+        Fade.Instance.FadeInAndOut();
         if (level == 0) LoadScene("SampleScene");
         else LoadScene("Hell " + level);
     }
@@ -58,6 +61,7 @@ public class LoadingManager : MonoBehaviour
 
     public void LoadNextScene()
     {
+        Fade.Instance.FadeInAndOut();
         if (currentLevel >= 9) return;
         currentLevel++;
 
