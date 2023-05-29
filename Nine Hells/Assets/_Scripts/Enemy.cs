@@ -48,6 +48,10 @@ namespace _Scripts
                 {
                     Hell7.IncreaseKilledEnemies();
                 }
+                else if (CountEnemyDeath && LoadingManager.instance.GetCurrentLevel()==6)
+                {
+                    Hell6.IncreaseDeadCounter();
+                }
                 
                 //die
                 // Destroy(gameObject);
