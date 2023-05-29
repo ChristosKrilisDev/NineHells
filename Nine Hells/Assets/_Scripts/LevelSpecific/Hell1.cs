@@ -2,10 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using TMPro;
 
 public class Hell1 : MonoBehaviour
 {
     public GameObject demoInteractPanel;
+
+    [SerializeField] GameObject textPanel;
+    [SerializeField] TextMeshProUGUI dialogueText;
+
+    void Start()
+    {
+        TextRendererManager.instance.SetTextPanel(textPanel, dialogueText);
+    }
 
     public void OnNpcHelped()
     {

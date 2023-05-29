@@ -22,7 +22,7 @@ public class LoadingManager : MonoBehaviour
         }
 
         //StartCoroutine(Load());
-        if (SceneManager.GetActiveScene().name.Equals("SampleScene")) currentLevel = 0;
+        if (SceneManager.GetActiveScene().name.Equals("MainMenu")) currentLevel = 0;
         else currentLevel = int.Parse(SceneManager.GetActiveScene().name.Replace("Hell ", ""));
     }
 
@@ -40,7 +40,7 @@ public class LoadingManager : MonoBehaviour
     }
     public void LoadScene(string sceneName)
     {
-        if (sceneName.Equals("SampleScene")) currentLevel = 0;
+        if (sceneName.Equals("MainMenu")) currentLevel = 0;
         else currentLevel = int.Parse(sceneName.Replace("Hell ", ""));
 
         Fade.Instance.FadeInAndOut();

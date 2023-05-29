@@ -88,33 +88,33 @@ namespace _Scripts.Interactions.InteractionsSO
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.M))
-            {
-                Buff buff = new Buff(BuffType.Buff, 1);
-                AddBuffToPlayer(buff);
-            }
+            //if (Input.GetKeyDown(KeyCode.M))
+            //{
+            //    Buff buff = new Buff(BuffType.Buff, 1);
+            //    AddBuffToPlayer(buff);
+            //}
 
-            if (Input.GetKeyDown(KeyCode.K))
-            {
-                Buff buff = new Buff(BuffType.Buff, 3);
-                AddBuffToPlayer(buff);
-            }
+            //if (Input.GetKeyDown(KeyCode.K))
+            //{
+            //    Buff buff = new Buff(BuffType.Buff, 3);
+            //    AddBuffToPlayer(buff);
+            //}
 
-            if (Input.GetKeyDown(KeyCode.L))
-            {
-                Buff buff = new Buff(BuffType.Debuff, 1);
-                AddBuffToPlayer(buff);
-            }
+            //if (Input.GetKeyDown(KeyCode.L))
+            //{
+            //    Buff buff = new Buff(BuffType.Debuff, 1);
+            //    AddBuffToPlayer(buff);
+            //}
 
-            if (Input.GetKeyDown(KeyCode.N))
-            {
-                playerHealth -= 10.0f;
-                HUD.Instance.PlayerStatsGUI.ChangePlayerHPUI(playerHealth);
-                if (playerHealth <= 0.0f)
-                {
-                    Debug.Log("GAME OVER");
-                }
-            }
+            //if (Input.GetKeyDown(KeyCode.N))
+            //{
+            //    playerHealth -= 10.0f;
+            //    HUD.Instance.PlayerStatsGUI.ChangePlayerHPUI(playerHealth);
+            //    if (playerHealth <= 0.0f)
+            //    {
+            //        Debug.Log("GAME OVER");
+            //    }
+            //}
 
             if (SwitchPlaneManager.CurrentPlaneState != SwitchPlaneManager.PlaneState.ShadowPlane)
             return;

@@ -12,19 +12,23 @@ namespace _Scripts.Character
         }
 
 
-        public static void GetScorePath()
+        public static void GetScorePath(Hell9 hell9)
         {
             if (MoralityScore <= -7)
             {
                 //sin path
+                hell9.ShowSin();
+
             }
             else if (MoralityScore >= 7)
             {
                 //virtue path
+                hell9.ShowVirtue();
             }
             else
             {
                 //whatever
+                hell9.ShowMixed();
             }
         }
     }

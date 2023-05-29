@@ -42,12 +42,19 @@ public class TextRendererManager : MonoBehaviour
         Debug.Log("Typing");
         this.charNameSpeaking.text = charNameSpeaking;
         this.dialogues = dialogues;
+        
         textPanel.gameObject.SetActive(true);
 
 
         StartCoroutine(ForTheDialogues(talkInteraction));
         //StartCoroutine(DisplayDialogue());
         //DisplayDialogue();
+    }
+
+    public void SetTextPanel(GameObject textPanel, TextMeshProUGUI dialogueText)
+    {
+        this.textPanel = textPanel;
+        this.dialogueText = dialogueText;
     }
 
     //IEnumerator DelayTyping(string text, float delayTime, float duration)

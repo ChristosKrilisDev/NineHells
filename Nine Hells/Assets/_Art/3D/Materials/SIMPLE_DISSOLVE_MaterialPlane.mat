@@ -114,7 +114,7 @@ Material:
     - _CutoffHeight: 0
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _DisAmount: 0
+    - _DisAmount: 0.24999984
     - _DstBlend: 0
     - _EdgeWidth: 0.05
     - _EnvironmentReflections: 1
