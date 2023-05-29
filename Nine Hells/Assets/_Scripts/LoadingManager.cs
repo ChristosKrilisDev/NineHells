@@ -40,8 +40,13 @@ public class LoadingManager : MonoBehaviour
     }
     public void LoadScene(string sceneName)
     {
+        if (sceneName.Equals("SampleScene")) currentLevel = 0;
+        else currentLevel = int.Parse(sceneName.Replace("Hell ", ""));
+
         Fade.Instance.FadeInAndOut();
         SceneManager.LoadSceneAsync(sceneName);
+
+
     }
 
     public void LoadScene(int level)
