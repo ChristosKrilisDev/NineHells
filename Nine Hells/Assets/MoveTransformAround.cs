@@ -9,17 +9,17 @@ public class MoveTransformAround : MonoBehaviour
     float startingPositionX = 0.0f, timePassed = 0.0f;
     [SerializeField] float cameraMoveSpeed = 2.0f;
 
-    [SerializeField] private Material _dissolveMaterialPlaneMat;
-    [SerializeField] private Material _dissolveShadowPlaneMat;
+    //[SerializeField] private Material _dissolveMaterialPlaneMat;
+    //[SerializeField] private Material _dissolveShadowPlaneMat;
 
     private void Awake()
     {
         _planeObjects = FindObjectsOfType<PlaneObject>(true);
 
-        foreach (var plane in _planeObjects)
-        {
-            plane.Init(_dissolveMaterialPlaneMat, _dissolveShadowPlaneMat);
-        }
+        //foreach (var plane in _planeObjects)
+        //{
+        //    plane.Init(_dissolveMaterialPlaneMat, _dissolveShadowPlaneMat);
+        //}
 
 
     }
