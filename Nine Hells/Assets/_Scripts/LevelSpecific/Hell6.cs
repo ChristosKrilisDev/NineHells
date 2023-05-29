@@ -6,8 +6,8 @@ using UnityEngine;
 public class Hell6 : MonoBehaviour
 {
     int talkCounter = 0;
-    static int deadCounter = 0;
-    GameObject player;
+    public static int deadCounter = 0;
+    public GameObject player;
     static GameObject Player;
     static Hell6 instance;
 
@@ -28,6 +28,7 @@ public class Hell6 : MonoBehaviour
         deadCounter++;
 
         if (deadCounter >= 7) Sin();
+        Debug.Log("LOL");
     }
     
 
