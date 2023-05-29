@@ -325,6 +325,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoralityBarGUI: {fileID: 0}
+  MaterialAudio: {fileID: 2865907678751539429}
+  ShadowAudio: {fileID: 5945859560210034982}
 --- !u!1001 &1809840627073377012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -409,9 +411,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60f7429773b3bff4696dc9ae20746b23, type: 3}
+--- !u!82 &2865907678751539429 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4528483428312261137, guid: 60f7429773b3bff4696dc9ae20746b23,
+    type: 3}
+  m_PrefabInstance: {fileID: 1809840627073377012}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4293751450782009322 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2489259449704342814, guid: 60f7429773b3bff4696dc9ae20746b23,
+    type: 3}
+  m_PrefabInstance: {fileID: 1809840627073377012}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &5945859560210034982 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5448853838526845906, guid: 60f7429773b3bff4696dc9ae20746b23,
     type: 3}
   m_PrefabInstance: {fileID: 1809840627073377012}
   m_PrefabAsset: {fileID: 0}
@@ -421,21 +435,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1809840627073377012}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3923121234531640400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6351542389758316164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45e942736d0138b43981b811714392d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MyMaterial: []
-  UseColor: 1
-  MeshRenderer: {fileID: 0}
 --- !u!23 &2253632222248469515
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -478,3 +477,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3923121234531640400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6351542389758316164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e942736d0138b43981b811714392d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyMaterial: []
+  UseColor: 1
+  MeshRenderer: {fileID: 0}
