@@ -32,6 +32,7 @@ namespace _Scripts.Character
             _points = new Points();
             //MoralityBarGUI.Init();
             MoralityBarGUI.UpdateMoralityBar(PlayerSave.MoralityScore);
+            HUD.Instance.PlayerStatsGUI.SetMorality(PlayerSave.MoralityScore);
         }
 
         public void AddSin()

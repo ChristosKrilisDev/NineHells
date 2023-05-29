@@ -23,6 +23,5 @@ public class GoalManager : MonoBehaviour
 
         //portal.transform.position = character.transform.position - Vector3.right * 2f;
         portal.transform.position = player.transform.position - Vector3.right * 2f;
-        player.GetComponent<Player>().AddVirtue();
     }
 }

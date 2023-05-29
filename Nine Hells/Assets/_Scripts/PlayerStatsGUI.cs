@@ -57,7 +57,12 @@ public class PlayerStatsGUI : MonoBehaviour
 
     public void ChangePlayerMoralUI(float morality)
     {
-        moralityBarSlider.value += morality / 10.0f;
+        moralityBarSlider.value += morality;
+    }
+
+    public void SetMorality(float morality)
+    {
+        moralityBarSlider.value = morality;
     }
 
     public void RefreshBuffsUi(List<Buff> playerBuffs)
