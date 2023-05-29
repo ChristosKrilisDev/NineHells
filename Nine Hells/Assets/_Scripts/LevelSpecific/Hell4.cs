@@ -29,15 +29,15 @@ public class Hell4 : MonoBehaviour
     public void Virtue()
     {
         player.GetComponent<Player>().AddVirtue();
-        //GetComponent<GoalManager>().OnGoalReached();
-        GetComponent<GoalManager>().OpenPortal();
+        GetComponent<GoalManager>().OnGoalReached();
+        //GetComponent<GoalManager>().OpenPortal();
     }
 
     public void Sin()
     {
         player.GetComponent<Player>().AddSin();
-        //GetComponent<GoalManager>().OnGoalReached();
-        GetComponent<GoalManager>().OpenPortal();
+        GetComponent<GoalManager>().OnGoalReached();
+        //GetComponent<GoalManager>().OpenPortal();
     }
 
     void Update()
