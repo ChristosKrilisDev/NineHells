@@ -33,5 +33,20 @@ namespace _Scripts.Interactions.InteractionsSO
         {
             if(finishEvent!=null)finishEvent.Invoke();
         }
+
+        public void ClearDialogues()
+        {
+            dialogues.Clear();
+        }
+
+        public void AddDialogue(string dialogue)
+        {
+            dialogues.Add(dialogue);
+        }
+
+        public void AddDialogues(List<string> newDialogues)
+        {
+            dialogues.AddRange(newDialogues);
+        }
     }
 }

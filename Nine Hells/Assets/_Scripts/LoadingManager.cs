@@ -64,6 +64,11 @@ public class LoadingManager : MonoBehaviour
         LoadScene("Hell " + currentLevel);
     }
 
+    public int GetCurrentLevel()
+    {
+        return currentLevel;
+    }
+
     void Update()
     {
         //if (Input.GetKeyDown(KeyCode.LeftArrow))

@@ -40,10 +40,15 @@ namespace _Scripts
             if (_hp <= 0)
             {
                 
-                if (CountEnemyDeath) //todo : add level 6 counter
+                if (CountEnemyDeath && LoadingManager.instance.GetCurrentLevel()==2) //todo : add level 6 counter
                 {
                     Hell2.IncreaseKilledEnemies();
                 }
+                else if(CountEnemyDeath && LoadingManager.instance.GetCurrentLevel() == 7)
+                {
+                    Hell7.IncreaseKilledEnemies();
+                }
+                
                 //die
                 // Destroy(gameObject);
                 isDead = true;
