@@ -36,6 +36,7 @@ namespace _Scripts.Character
         public void AddSin()
         {
             _points.AddSinPoint();
+            PlayerSave.MoralityScore--;
             MoralityBarGUI.UpdateMoralityBar(-1);
             HUD.Instance.PlayerStatsGUI.ChangePlayerMoralUI(-1);
         }
@@ -43,21 +44,22 @@ namespace _Scripts.Character
         public void AddVirtue()
         {
             _points.AddVirtuePoint();
+            PlayerSave.MoralityScore++;
             MoralityBarGUI.UpdateMoralityBar(+1);
             HUD.Instance.PlayerStatsGUI.ChangePlayerMoralUI(+1);
         }
 
-        // private void Update()
-        // {
-        //     if (Input.GetKeyDown(KeyCode.Z))
-        //     {
-        //         AddSin();
-        //     }
-        //     if (Input.GetKeyDown(KeyCode.X))
-        //     {
-        //         AddVirtue();
-        //     }
-        // }
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Z))
+            {
+                AddSin();
+            }
+            if (Input.GetKeyDown(KeyCode.X))
+            {
+                AddVirtue();
+            }
+        }
 
     }
 }
