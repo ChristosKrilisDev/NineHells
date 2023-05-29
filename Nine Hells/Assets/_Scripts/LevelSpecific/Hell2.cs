@@ -9,20 +9,26 @@ public class Hell2 : MonoBehaviour
 {
     public GameObject portal;
     public GameObject player;
+    public GameObject oldMan;
     public static GameObject Player;
     public static GameObject Portal;
+    public static GameObject OldMan;
 
     private void Start()
     {
         Portal = portal;
         Player = player;
+        OldMan = oldMan;
     }
 
     public void OnNpcHelped()
     {
-        portal.SetActive(true);
+        //portal.SetActive(true);
 
-        portal.transform.position = player.transform.position - Vector3.right * 2f;
+        //portal.transform.position = player.transform.position - Vector3.right * 2f;
+
+        OldMan.SetActive(true);
+        OldMan.transform.position = Player.transform.position - Vector3.right * 2f;
         Player.GetComponent<Player>().AddVirtue();
 
     }
@@ -46,9 +52,12 @@ public class Hell2 : MonoBehaviour
 
         if (KilledEnemies >= 2)
         {
-            Portal.SetActive(true);
+            //Portal.SetActive(true);
 
-            Portal.transform.position = Player.transform.position - Vector3.right * 2f;
+            //Portal.transform.position = Player.transform.position - Vector3.right * 2f;
+            OldMan.SetActive(true);
+            OldMan.transform.position = Player.transform.position - Vector3.right * 2f;
+
             Player.GetComponent<Player>().AddSin();
         }
     }
