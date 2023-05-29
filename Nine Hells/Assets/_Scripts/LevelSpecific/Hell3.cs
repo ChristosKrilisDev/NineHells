@@ -111,6 +111,8 @@ public class Hell3 : MonoBehaviour
             _ => 0
         };
 
+        player.GetComponent<PlayerController>().SlowJump(0.1f);
+
         //Debug.Log($"Weight: {currentWeight}");
     }
 

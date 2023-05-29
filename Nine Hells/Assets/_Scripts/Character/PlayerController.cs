@@ -122,6 +122,11 @@ namespace _Scripts.Character
             }
         }
     
+        public void SlowJump(float amount)
+        {
+            if (_jumpForce < amount) return;
+            _jumpForce -= amount;
+        }
 
         private void OnTriggerEnter(Collider collision)
         {
