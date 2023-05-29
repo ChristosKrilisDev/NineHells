@@ -3,6 +3,7 @@ using DG.Tweening;
 using _Scripts.Character;
 using _Scripts.Interactions.InteractionsSO;
 using System.Collections.Generic;
+using System;
 
 public class Hell7 : MonoBehaviour
 {
@@ -11,16 +12,23 @@ public class Hell7 : MonoBehaviour
     public GameObject ladder;
     public Transform initPos, endPos;
     public GameObject player;
+    static GameObject Player;
+    static Hell7 instance;
     public TalkInteraction npcTalkInteraction;
     bool helpedNPC = false;
 
+    void Start()
+    {
+        Player = player;
+        instance = this;
+    } 
     public static void IncreaseKilledEnemies()
     {
         KilledEnemies++;
 
         if (KilledEnemies >= 2)
         {
-
+            Sin();
         }
     }
 
@@ -41,15 +49,12 @@ public class Hell7 : MonoBehaviour
 
     public void Virtue()
     {
-        if (helpedNPC)
-        {
-
-            GetComponent<GoalManager>().OnGoalReached();
-        }
+        if (helpedNPC)GetComponent<GoalManager>().OnGoalReached();
     }
 
-    public void Sin()
+    public static void Sin()
     {
-        player.GetComponent<Player>().AddSin();
+        Player.GetComponent<Player>().AddSin();
+        instance.GetComponent<GoalManager>().OpenPortal();
     }
 }
