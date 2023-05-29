@@ -8,6 +8,23 @@ namespace _Scripts.Character
         private Points _points;
 
         public MoralityBarGUI MoralityBarGUI;
+
+        public AudioSource MaterialAudio;
+        public AudioSource ShadowAudio;
+
+
+        public void SwitchToMaterial()
+        {
+            ShadowAudio.volume = 0;
+            MaterialAudio.volume = 1;
+        }
+
+        public void SwitchToShadow()
+        {
+            ShadowAudio.volume = 1;
+            MaterialAudio.volume = 0;
+        }
+        
         
         private void Awake()
         {

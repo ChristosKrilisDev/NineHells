@@ -48,6 +48,7 @@ public class SwitchPlaneManager : MonoBehaviour
     private void Start()
     {
         CurrentPlaneState = PlaneState.MaterialPlane;
+        FindObjectOfType<Player>()?.SwitchToMaterial();
         SwitchPlane(CurrentPlaneState);
     }
 
@@ -63,6 +64,7 @@ public class SwitchPlaneManager : MonoBehaviour
                 CombatController.enabled = true;
                 CombatController.ActivateWeapon();
                 CombatController.Animator = ShadowAnimator;
+                FindObjectOfType<Player>()?.SwitchToShadow();
                 SwitchPlane(PlaneState.ShadowPlane);
             }
             else
@@ -70,6 +72,7 @@ public class SwitchPlaneManager : MonoBehaviour
                 CombatController.enabled = false;
                 CombatController.HideWeapon();
                 CombatController.Animator = MaterialAnimator;
+                FindObjectOfType<Player>()?.SwitchToMaterial();
                 SwitchPlane(PlaneState.MaterialPlane);
             }
         }
