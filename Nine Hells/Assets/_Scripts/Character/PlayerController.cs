@@ -65,7 +65,7 @@ namespace _Scripts.Character
 
             if (CheckIfBelowHeight(-7)) ResetPlayer();
 
-            _rb.velocity = Vector3.ClampMagnitude(_rb.velocity, 10);
+            _rb.velocity = Vector3.ClampMagnitude(_rb.velocity, 7);
 
             ClimbInput();
             Jump();
