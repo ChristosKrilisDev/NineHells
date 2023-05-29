@@ -157,6 +157,11 @@ namespace _Scripts.Interactions.InteractionsSO
                 {
                     rocks.HitRocks();
                 }
+
+                if(hit.collider.TryGetComponent(out BridgeCollide bridgeCollide))
+                {
+                    bridgeCollide.HitBridge(1);
+                }
             }
         }
 
