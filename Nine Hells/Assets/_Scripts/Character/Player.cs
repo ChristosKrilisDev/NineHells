@@ -53,14 +53,14 @@ namespace _Scripts.Character
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Z))
-            {
-                AddSin();
-            }
-            if (Input.GetKeyDown(KeyCode.X))
-            {
-                AddVirtue();
-            }
+            //if (Input.GetKeyDown(KeyCode.Z))
+            //{
+            //    AddSin();
+            //}
+            //if (Input.GetKeyDown(KeyCode.X))
+            //{
+            //    AddVirtue();
+            //}
         }
 
     }
